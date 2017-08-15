@@ -36,10 +36,10 @@ const Header = () =>
 const TemplateWrapper = ({ children }) =>
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Steffis Krümelkiste"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Kindertagespflege in Weißensee' },
+        { name: 'keywords', content: 'Kindertagespflege, Weißensee, Kinder, Tagespflege, Betreuung' },
       ]}
     />
     <Header />

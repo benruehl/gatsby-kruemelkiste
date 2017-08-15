@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "gatsby-kruemelkiste",
+  "description": "Steffis Kruemelkiste in Gatsby",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Benjamin R",
   "dependencies": {
     "gatsby": "^1.6.5",
     "gatsby-link": "^1.6.5",
-    "gatsby-plugin-react-helmet": "^1.0.1"
+    "gatsby-plugin-react-helmet": "^1.0.2"
   },
   "keywords": [
     "gatsby"
