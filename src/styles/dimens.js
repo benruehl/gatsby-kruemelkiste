@@ -1,1 +1,1 @@
-export const contentWidth = '1080px';
+export const contentWidth = '1280px';

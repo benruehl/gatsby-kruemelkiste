@@ -18,7 +18,7 @@ const TitleScreen = () =>
 
     <figure 
       css={{
-        position: 'absolute',
+        position: 'fixed',
         left: 0,
         right: 0,
         overflow: 'hidden',
@@ -45,7 +45,7 @@ const TitleScreen = () =>
           display: 'inline-block',
           width: contentWidth,
           padding: '0px 1.0875rem 1.45rem',
-          paddingTop: 580,
+          paddingTop: 610,
           textAlign: 'left',
         }}>
 
@@ -53,7 +53,7 @@ const TitleScreen = () =>
           css={{
             color: 'white',
             fontSize: '5em',
-            textShadow: '2px 2px 0px #f59782'
+            textShadow: '2px 2px 0px ' + primaryColor,
           }}>
 
           {strings.siteTitle}
@@ -61,8 +61,10 @@ const TitleScreen = () =>
 
         <h2
           css={{
-            color: primaryColor,
+            color: 'rgba(255, 255, 255, .5)',
             fontSize: '3em',
+            maxWidth: '900px',
+            textShadow: '1px 1px 0px ' + primaryColor,
           }}>
 
           {strings.siteSlogan}
