@@ -1,6 +1,6 @@
 import React from 'react'
 
-import titleImg from '../img/kid-soap-bubbles.png'
+import titleImg from '../img/kid-soap-bubbles.jpg'
 import strings from '../../data/strings'
 import {contentWidth} from '../styles/dimens'
 import {primaryColor} from '../styles/colors'
