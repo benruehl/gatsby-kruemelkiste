@@ -5,73 +5,107 @@ import strings from '../../data/strings'
 import {contentWidth} from '../styles/dimens'
 import {primaryColor} from '../styles/colors'
 
-const TitleScreen = () =>
-  <div
-    css={{
-      position: 'relative',
-      minHeight: 0,
-      marginBottom: '1.45rem',
-      width: '100%',
-      overflow: 'hidden',
-    }}
-  >
+class TitleScreen extends React.Component {
 
-    <figure 
-      css={{
-        position: 'fixed',
-        left: 0,
-        right: 0,
-        overflow: 'hidden',
-      }}>
+  constructor() {
+    super()
+    this.state = {
+      scrollOpacity: 1
+    };
+    this.handleScroll = this.handleScroll.bind(this)
+  }
 
-      <img src={titleImg} alt="title background"
-        style={{
-          position: 'relative',
-          width: '100%',
-        }} />
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
 
-    </figure>
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 
-    <div 
-      css={{
-        position: 'relative',
-        width: '100%',
-        height: 970,
-        textAlign: 'center',
-      }}>
+  handleScroll(e) {
+    e.stopPropagation();
+    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
+        height = document.body.clientHeight,
+        fadingOffset = 0.5,
+        fadingSpeed = 5;
 
+    this.setState({
+      scrollOpacity: fadingOffset + ((height - scrollTop * fadingSpeed) / height)
+    });
+  }
+
+  render() {
+    return (
       <div
-        style={{
-          display: 'inline-block',
-          width: contentWidth,
-          padding: '0px 1.0875rem 1.45rem',
-          paddingTop: 610,
-          textAlign: 'left',
-        }}>
+        css={{
+          position: 'relative',
+          minHeight: 0,
+          marginBottom: '1.45rem',
+          width: '100%',
+          height: '100vh',
+          overflow: 'hidden',
+        }}
+      >
 
-        <h1 
+        <figure 
           css={{
-            color: 'white',
-            fontSize: '5em',
-            textShadow: '2px 2px 0px ' + primaryColor,
+            position: 'fixed',
+            left: 0,
+            right: 0,
+            overflow: 'hidden',
           }}>
 
-          {strings.siteTitle}
-        </h1>
+          <img src={titleImg} alt="title background"
+            style={{
+              position: 'relative',
+              width: '100%',
+            }} />
 
-        <h2
+        </figure>
+
+        <div 
           css={{
-            color: 'rgba(255, 255, 255, .5)',
-            fontSize: '3em',
-            maxWidth: '900px',
-            textShadow: '1px 1px 0px ' + primaryColor,
+            position: 'relative',
+            width: '100%',
+            height: '100%',
+            opacity: this.state.scrollOpacity
           }}>
 
-          {strings.siteSlogan}
-        </h2>
+          <div
+            style={{
+              position: 'absolute',
+              left: 120,
+              bottom: 80,
+              textAlign: 'left',
+            }}>
 
+            <h1 
+              css={{
+                color: 'white',
+                fontSize: '6em',
+                textShadow: '2px 2px 0px ' + primaryColor,
+              }}>
+
+              {strings.siteTitle}
+            </h1>
+
+            <h2
+              css={{
+                color: 'rgba(255, 255, 255, .5)',
+                fontSize: '3em',
+                maxWidth: '900px',
+                textShadow: '1px 1px 0px ' + primaryColor,
+              }}>
+
+              {strings.siteSlogan}
+            </h2>
+
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    )
+  }
+}
 
 export default TitleScreen
