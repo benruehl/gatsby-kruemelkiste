@@ -14,11 +14,13 @@ class SectionContainer extends React.Component {
 
         <div
           css={{
-            width: contentWidth,
+            maxWidth: contentWidth,
             display: 'inline-block',
             textAlign: 'left',
             paddingTop: 120,
             paddingBottom: 120,
+            paddingLeft: '2vw',
+            paddingRight: '2vw',
           }}>
 
           {this.props.children}

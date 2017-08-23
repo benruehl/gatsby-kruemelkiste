@@ -1,4 +1,4 @@
 module.exports = {
   siteTitle: "Steffis Krümelkiste",
-  siteSlogan: "Liebevolle Kindertagespflege in\u00A0Weißensee",
+  siteSlogan: "Liebevolle Kindertagespflege \nin\u00A0Weißensee",
 }

@@ -41,9 +41,9 @@ class TitleScreen extends React.Component {
         css={{
           position: 'relative',
           minHeight: 0,
-          marginBottom: '1.45rem',
           width: '100%',
-          height: '100vh',
+          height: '50vw',
+          maxHeight: '100vh',
           overflow: 'hidden',
         }}
       >
@@ -75,15 +75,16 @@ class TitleScreen extends React.Component {
           <div
             style={{
               position: 'absolute',
-              left: 120,
-              bottom: 80,
+              left: '6vw',
+              bottom: '5vw',
               textAlign: 'left',
             }}>
 
             <h1 
               css={{
                 color: 'white',
-                fontSize: '6em',
+                fontSize: '6rem',
+                fontSize: '5vw',
                 textShadow: '2px 2px 0px ' + primaryColor,
               }}>
 
@@ -93,12 +94,14 @@ class TitleScreen extends React.Component {
             <h2
               css={{
                 color: 'rgba(255, 255, 255, .5)',
-                fontSize: '3em',
-                maxWidth: '900px',
+                fontSize: '3rem',
+                fontSize: '3vw',
                 textShadow: '1px 1px 0px ' + primaryColor,
               }}>
 
-              {strings.siteSlogan}
+              {strings.siteSlogan.split('\n')[0]}
+              <br/>
+              {strings.siteSlogan.split('\n')[1]}
             </h2>
 
           </div>
