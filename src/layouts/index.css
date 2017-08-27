@@ -1,3 +1,17 @@
+blockquote {
+  border-left-color: #eb584f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.58rem;
+}
+
+/*
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -622,3 +636,4 @@ pre tt:after {
     font-size: 100%;
   }
 }
+*/

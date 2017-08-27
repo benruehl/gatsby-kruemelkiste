@@ -12,7 +12,7 @@ const TemplateWrapper = ({ children }) =>
       title="Steffis Krümelkiste"
       meta={[
         { name: 'description', content: 'Kindertagespflege in Weißensee' },
-        { name: 'keywords', content: 'Kindertagespflege, Weißensee, Kinder, Tagespflege, Betreuung' },
+        { name: 'keywords', content: 'Kindertagespflege, Weißensee, Kinder, Tagespflege, Betreuung, Kinderbetreuung, Tagesmutter' },
       ]}
     />
 

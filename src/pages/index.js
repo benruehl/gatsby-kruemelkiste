@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import TitleScreen from '../components/TitleScreen'
 import About from '../components/About'
+import Voices from '../components/Voices'
 import Footer from '../components/Footer'
 import strings from '../../data/strings'
 
@@ -24,6 +25,7 @@ const IndexPage = () =>
   		}}>
 
   		<About/>
+      <Voices/>
   		<Footer/>
 
 	</div>
