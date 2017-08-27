@@ -16,22 +16,22 @@ class TitleScreen extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll, {passive: true});
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll, {passive: true});
   }
 
   handleScroll(e) {
     e.stopPropagation();
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
         height = document.body.clientHeight,
-        fadingOffset = 0.5,
+        fadingOffset = 150,
         fadingSpeed = 5;
 
     this.setState({
-      scrollOpacity: fadingOffset + ((height - scrollTop * fadingSpeed) / height)
+      scrollOpacity: ((fadingOffset + height - scrollTop * fadingSpeed) / height)
     });
   }
 
