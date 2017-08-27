@@ -8,7 +8,7 @@ import strings from '../../data/strings'
 class About extends React.Component {
   render() {
     return (
-      <SectionContainer background='#e8e8e8'>
+      <SectionContainer background='white'>
 
         <h1>Zufriedenheit bei Kindern und Eltern</h1>
 

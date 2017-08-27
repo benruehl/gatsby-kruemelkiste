@@ -10,6 +10,7 @@ class BackgroundContentContainer extends React.Component {
         css={{
           position: 'relative',
           overflow: 'hidden',
+          background: this.props.background,
         }}
       >
 

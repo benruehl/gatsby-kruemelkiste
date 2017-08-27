@@ -11,14 +11,14 @@ import familyTreeImg from '../img/sketch-family-tree.svg'
 class About extends React.Component {
   render() {
     return (
-      <BackgroundContentContainer>
+      <BackgroundContentContainer background='white'>
 
         <div
           css={{
             width: '100%',
             textAlign: 'center',
-          }}
-        >
+          }}>
+
           <img src={familyTreeImg} alt="" 
             css={{
               display: 'inline-block',
@@ -33,8 +33,8 @@ class About extends React.Component {
 
           <div
             css={{
-            }}
-          >
+            }}>
+
             <h1>Über mich</h1>
             <p>Mein Name ist Steffi Rühl. Ich bin verheiratet, habe zwei Kinder und bin von Beruf Kinderkrankenschwester. Nachdem ich jahrelang Erfahrungen in diesem Beruf gesammelt habe, gab ich diese Tätigkeit für die Betreuung meiner Kinder auf.</p>
             <p>Was zunächst mit einem Kind als Spielkamerad für unsere Tochter begann, hat sich unterdessen zu einer Institution mit fünf Tageskindern entwickelt.</p>

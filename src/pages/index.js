@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import TitleScreen from '../components/TitleScreen'
 import About from '../components/About'
+import Service from '../components/Service'
 import Voices from '../components/Voices'
 import Footer from '../components/Footer'
 import strings from '../../data/strings'
@@ -21,10 +22,11 @@ const IndexPage = () =>
   	<div 
   		css={{
   			position: 'relative',
-  			background: 'white',
+  			background: 'transparent',
   		}}>
 
   		<About/>
+      <Service/>
       <Voices/>
   		<Footer/>
 
