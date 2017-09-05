@@ -50,8 +50,8 @@ class Service extends React.Component {
                   flexDirection: 'row',
                   flexWrap: 'nowrap',
                   alignItems: 'center',
-                  marginTop: '50',
-                  marginBottom: -300,
+                  marginTop: '2rem',
+                  marginBottom: '-12rem',
                 }}>
 
                 <figure
@@ -91,7 +91,7 @@ class Service extends React.Component {
 
         <div
           css={{
-            minHeight: 80,
+            minHeight: '7rem',
             width: '100%',
             background: 'white',
           }}>

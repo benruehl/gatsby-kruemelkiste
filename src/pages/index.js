@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import TitleScreen from '../components/TitleScreen'
+import NavBar from '../components/NavBar'
 import About from '../components/About'
 import Service from '../components/Service'
 import Voices from '../components/Voices'
@@ -18,6 +19,7 @@ const IndexPage = () =>
 	}}>
 
   	<TitleScreen/>
+    <NavBar/>
 
   	<div 
   		css={{

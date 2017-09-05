@@ -27,8 +27,11 @@ class TitleScreen extends React.Component {
     e.stopPropagation();
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
         height = document.body.clientHeight,
-        fadingOffset = 150,
-        fadingSpeed = 5;
+        vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
+        fadingOffset = vh * 0.5,
+        fadingSpeed = height / vh * 1.5;
+
+        console.log(((fadingOffset + height - scrollTop * fadingSpeed) / height))
 
     this.setState({
       scrollOpacity: ((fadingOffset + height - scrollTop * fadingSpeed) / height)

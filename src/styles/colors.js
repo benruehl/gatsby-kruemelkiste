@@ -1,2 +1,3 @@
 export const primaryColor = '#eb584f';
-export const headerColor = 'rgba(255, 255, 255, 0.3)';
+export const navBarFgColor = '#eb584f';
+export const navBarBgColor = 'rgba(255, 255, 255, 0.95)';

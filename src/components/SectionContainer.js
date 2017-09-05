@@ -10,6 +10,8 @@ class SectionContainer extends React.Component {
         css={{
           textAlign: 'center',
           background: this.props.background,
+          paddingLeft: '2vw',
+          paddingRight: '2vw',
         }}>
 
         <div
@@ -17,10 +19,8 @@ class SectionContainer extends React.Component {
             maxWidth: contentWidth,
             display: 'inline-block',
             textAlign: 'left',
-            paddingTop: 120,
-            paddingBottom: 120,
-            paddingLeft: '2vw',
-            paddingRight: '2vw',
+            paddingTop: '2rem',
+            paddingBottom: '2rem',
           }}>
 
           {this.props.children}
