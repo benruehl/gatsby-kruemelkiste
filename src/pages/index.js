@@ -7,32 +7,60 @@ import Service from '../components/Service'
 import Voices from '../components/Voices'
 import Footer from '../components/Footer'
 import strings from '../../data/strings'
+import {primaryGradientColor1, primaryGradientColor2} from '../styles/colors'
 
 const IndexPage = () =>
   <div
-  	css={{
-		background: '#ff5730',
-		background: '-moz-linear-gradient(-45deg, #ff5730 0%, #9c3bc5 100%)',
-		background: '-webkit-linear-gradient(-45deg, #ff5730 0%,#9c3bc5 100%)',
-		background: 'linear-gradient(135deg, #ff5730 0%,#9c3bc5 100%)',
-		filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5730", endColorstr="#9c3bc5", GradientType=1)',
-	}}>
+    css={{
+      position: 'relative',
+    }}>
 
-  	<TitleScreen/>
-    <NavBar/>
+    <div
+      css={{
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+      }}>
 
-  	<div 
-  		css={{
-  			position: 'relative',
-  			background: 'transparent',
-  		}}>
+      <div
+        css={{
+          width: '100%',
+          height: '100%',
+          background: primaryGradientColor1,
+          background: '-moz-linear-gradient(-45deg, ' + primaryGradientColor1 + ' 0%, ' + primaryGradientColor2 + ' 100%)',
+          background: '-webkit-linear-gradient(-45deg, ' + primaryGradientColor1 + ' 0%, ' + primaryGradientColor2 + ' 100%)',
+          background: 'linear-gradient(135deg, ' + primaryGradientColor1 + ' 0%, ' + primaryGradientColor2 + ' 100%)',
+          filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="' + primaryGradientColor1 + '", endColorstr="' + primaryGradientColor2 + '", GradientType=1)',
+          position: 'fixed',
+      }}>
 
-  		<About/>
-      <Service/>
-      <Voices/>
-  		<Footer/>
+    </div>
 
-	</div>
+    <div
+      css={{
+        position: 'relative',
+      }}>
+
+      <TitleScreen/>
+      <NavBar/>
+
+      <div 
+        css={{
+          position: 'relative',
+          background: 'transparent',
+        }}>
+
+        <About/>
+        <Service/>
+        <Voices/>
+        <Footer/>
+
+    </div>
+    
+    </div>
+  </div>
   </div>
 
 export default IndexPage

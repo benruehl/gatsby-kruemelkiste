@@ -48,24 +48,9 @@ class TitleScreen extends React.Component {
           height: '50vw',
           maxHeight: '100vh',
           overflow: 'hidden',
-        }}
-      >
-
-        <figure 
-          css={{
-            position: 'fixed',
-            left: 0,
-            right: 0,
-            overflow: 'hidden',
-          }}>
-
-          <img src={titleImg} alt="title background"
-            style={{
-              position: 'relative',
-              width: '100%',
-            }} />
-
-        </figure>
+          background: 'url(' + titleImg + ') center center no-repeat fixed',
+          backgroundSize: 'cover',
+        }}>
 
         <div 
           css={{

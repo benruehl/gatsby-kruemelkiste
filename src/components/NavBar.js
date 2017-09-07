@@ -91,15 +91,17 @@ class NavBar extends React.Component {
             }}>
 
             <h4 style={{ margin: 0, marginLeft: '2rem' }}>
-              Mein Angebot
+              {strings.serviceCaption}
             </h4>
 
             <h4 style={{ margin: 0, marginLeft: '2rem' }}>
-              Kosten & Vertrag
+              <Link to="/contract/">
+                {strings.contractCaption}
+              </Link>
             </h4>
 
             <h4 style={{ margin: 0, marginLeft: '2rem' }}>
-              Kontakt
+              {strings.contactCaption}
             </h4>
 
           </div>

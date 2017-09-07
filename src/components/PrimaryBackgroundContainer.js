@@ -6,12 +6,8 @@ class PrimaryBackgroundContainer extends React.Component {
     return (
       <div
         css={{
-        background: '#ff5730',
-        background: '-moz-linear-gradient(-45deg, #ff5730 0%, #9c3bc5 100%)',
-        background: '-webkit-linear-gradient(-45deg, #ff5730 0%,#9c3bc5 100%)',
-        background: 'linear-gradient(135deg, #ff5730 0%,#9c3bc5 100%)',
-        filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5730", endColorstr="#9c3bc5", GradientType=1)',
-      }}>
+          background: 'transparent',
+        }}>
 
         {this.props.children}
       </div>

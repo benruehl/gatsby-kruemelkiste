@@ -56,7 +56,8 @@ class Service extends React.Component {
 
                 <figure
                   css={{
-                    width: '100%',
+                    maxWidth: '100%',
+                    minWidth: 0,
                     flex: '1 1 auto',
                     border: '5px solid white',
                     marginRight: '10px',
@@ -66,21 +67,23 @@ class Service extends React.Component {
 
                 <figure
                   css={{
-                    width: '100%',
+                    maxWidth: '100%',
+                    minWidth: 0,
                     flex: '1 1 auto',
                     border: '5px solid white',
                     marginRight: '10px',
                   }}>
-                  <img src={kidPaintingImg} alt="child in ball pit"/>
+                  <img src={kidPaintingImg} alt="child painting"/>
                 </figure>
 
                 <figure
                   css={{
-                    width: '100%',
+                    maxWidth: '100%',
+                    minWidth: 0,
                     flex: '1 1 auto',
                     border: '5px solid white',
                   }}>
-                  <img src={kidCarsImg} alt="child in ball pit"/>
+                  <img src={kidCarsImg} alt="child playing with cars"/>
                 </figure>
 
               </div>
