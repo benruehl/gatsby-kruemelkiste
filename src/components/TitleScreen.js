@@ -1,9 +1,27 @@
 import React from 'react'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
 
 import titleImg from '../img/kid-soap-bubbles.jpg'
 import strings from '../../data/strings'
 import {contentWidth} from '../styles/dimens'
 import {primaryColor} from '../styles/colors'
+
+const NavBarItem = styled.h4`
+  margin: 0;
+  margin-left: 2rem;
+  color: white;
+`
+
+const NavBarLink = styled(Link)`
+  color: white;
+  padding: 4px 0;
+  border: 0 solid transparent;
+  border-bottom-width: 2px;
+  &:hover {
+    border-color: white;
+  }
+`
 
 class TitleScreen extends React.Component {
 
@@ -31,8 +49,6 @@ class TitleScreen extends React.Component {
         fadingOffset = vh * 0.5,
         fadingSpeed = height / vh * 1.5;
 
-        console.log(((fadingOffset + height - scrollTop * fadingSpeed) / height))
-
     this.setState({
       scrollOpacity: ((fadingOffset + height - scrollTop * fadingSpeed) / height)
     });
@@ -57,7 +73,7 @@ class TitleScreen extends React.Component {
             position: 'relative',
             width: '100%',
             height: '100%',
-            opacity: this.state.scrollOpacity
+            opacity: this.state.scrollOpacity,
           }}>
 
           <div
@@ -91,6 +107,46 @@ class TitleScreen extends React.Component {
               <br/>
               {strings.siteSlogan.split('\n')[1]}
             </h2>
+
+          </div>
+        </div>
+
+        <div
+          css={{
+            position: 'absolute',
+            top: 0,
+            width: '100%',
+            padding: '1.75rem 0',
+          }}>
+
+          <div
+            css={{
+              display: 'flex',
+              flex: '1 1 auto',
+              justifyContent: 'flex-end',
+              maxWidth: contentWidth,
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              zIndex: '101',
+            }}>
+
+            <NavBarItem>
+              {strings.aboutCaption}
+            </NavBarItem>
+
+            <NavBarItem>
+              {strings.serviceCaption}
+            </NavBarItem>
+
+            <NavBarItem>
+              <NavBarLink to="/contract/">
+                {strings.contractCaption}
+              </NavBarLink>
+            </NavBarItem>
+
+            <NavBarItem>
+              {strings.contactCaption}
+            </NavBarItem>
 
           </div>
         </div>

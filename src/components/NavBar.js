@@ -10,7 +10,8 @@ class NavBar extends React.Component {
   constructor() {
     super()
     this.state = {
-      scrollOpacity: 0
+      scrollOpacity: 0,
+      scrollDisplay: 'none'
     };
     this.handleScroll = this.handleScroll.bind(this)
   }
@@ -31,11 +32,21 @@ class NavBar extends React.Component {
 
     if (scrollTop > vh) {
       this.setState({
-        scrollOpacity: 1
+        scrollOpacity: 1,
       });
     } else {
       this.setState({
-        scrollOpacity: 0
+        scrollOpacity: 0,
+      });
+    }
+
+    if (scrollTop > vh - 50) {
+      this.setState({
+        scrollDisplay: 'block',
+      });
+    } else if (scrollTop < 50) {
+      this.setState({
+        scrollDisplay: 'none',
       });
     }
   }
@@ -51,6 +62,7 @@ class NavBar extends React.Component {
           top: 0,
           zIndex: 100,
           opacity: this.state.scrollOpacity,
+          display: this.state.scrollDisplay,
           WebkitBoxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
           MozBoxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
           boxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
@@ -105,6 +117,7 @@ class NavBar extends React.Component {
             </h4>
 
           </div>
+
         </div>
       </div>
     )

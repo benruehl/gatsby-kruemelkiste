@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import kidBallPitImg from '../img/kid-ball-pit.jpg'
 import kidPaintingImg from '../img/kid-painting.jpg'
@@ -8,6 +9,14 @@ import PrimaryBackgroundContainer from '../components/PrimaryBackgroundContainer
 
 //import {headerColor} from '../styles/colors'
 import strings from '../../data/strings'
+
+const ImageWrapper = styled.figure`
+  max-width: 100%;
+  min-width: 0;
+  flex: 1 1 auto;
+  border: 5px solid white;
+  margin-right: 10px;
+`
 
 class Service extends React.Component {
   render() {
@@ -54,37 +63,17 @@ class Service extends React.Component {
                   marginBottom: '-12rem',
                 }}>
 
-                <figure
-                  css={{
-                    maxWidth: '100%',
-                    minWidth: 0,
-                    flex: '1 1 auto',
-                    border: '5px solid white',
-                    marginRight: '10px',
-                  }}>
+                <ImageWrapper>
                   <img src={kidBallPitImg} alt="child in ball pit"/>
-                </figure>
+                </ImageWrapper>
 
-                <figure
-                  css={{
-                    maxWidth: '100%',
-                    minWidth: 0,
-                    flex: '1 1 auto',
-                    border: '5px solid white',
-                    marginRight: '10px',
-                  }}>
+                <ImageWrapper>
                   <img src={kidPaintingImg} alt="child painting"/>
-                </figure>
+                </ImageWrapper>
 
-                <figure
-                  css={{
-                    maxWidth: '100%',
-                    minWidth: 0,
-                    flex: '1 1 auto',
-                    border: '5px solid white',
-                  }}>
+                <ImageWrapper>
                   <img src={kidCarsImg} alt="child playing with cars"/>
-                </figure>
+                </ImageWrapper>
 
               </div>
             </div>

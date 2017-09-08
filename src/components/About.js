@@ -35,7 +35,7 @@ class About extends React.Component {
             css={{
             }}>
 
-            <h1>Über mich</h1>
+            <h1>{strings.aboutCaption}</h1>
             <p>Mein Name ist Steffi Rühl. Ich bin verheiratet, habe zwei Kinder und bin von Beruf Kinderkrankenschwester. Nachdem ich jahrelang Erfahrungen in diesem Beruf gesammelt habe, gab ich diese Tätigkeit für die Betreuung meiner Kinder auf.</p>
             <p>Was zunächst mit einem Kind als Spielkamerad für unsere Tochter begann, hat sich unterdessen zu einer Institution mit fünf Tageskindern entwickelt.</p>
             <p>Die Tageskinder haben einen festen Platz in unserem Leben. Sie finden Halt und Geborgenheit in einem geregelten und dennoch abwechselungsreichen Tagesablauf.</p>
