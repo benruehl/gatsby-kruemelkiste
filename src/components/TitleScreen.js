@@ -54,6 +54,11 @@ class TitleScreen extends React.Component {
     });
   }
 
+  scrollToAbout() {
+    console.log('scroll to about')
+    console.log(this)
+  }
+
   render() {
     return (
       <div
@@ -131,7 +136,9 @@ class TitleScreen extends React.Component {
             }}>
 
             <NavBarItem>
-              {strings.aboutCaption}
+              <NavBarLink to="#about">
+                {strings.aboutCaption}
+              </NavBarLink>
             </NavBarItem>
 
             <NavBarItem>
