@@ -29,10 +29,10 @@ const IndexAlternatePage = () =>
           width: '100%',
           height: '100%',
           background: primaryGradientColor1,
-          background: '-moz-linear-gradient(-45deg, #ff9547 0%, #df5353 100%)',
-          background: '-webkit-linear-gradient(-45deg, #ff9547 0%, #df5353 100%)',
-          background: 'linear-gradient(135deg, #ff9547 0%, #df5353 100%)',
-          filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9547", endColorstr="#df5353", GradientType=1)',
+          background: '-moz-linear-gradient(-45deg, #fc7556 0%, #d84788 100%)',
+          background: '-webkit-linear-gradient(-45deg, #fc7556 0%, #d84788 100%)',
+          background: 'linear-gradient(135deg, #fc7556 0%, #d84788 100%)',
+          filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="#fc7556", endColorstr="#d84788", GradientType=1)',
           position: 'fixed',
       }}>
 
