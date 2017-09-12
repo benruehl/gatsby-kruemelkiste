@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import titleImg from '../img/kid-soap-bubbles.jpg'
+import titleImg from '../img/kid-soap-bubbles-alternate.jpg'
 import strings from '../../data/strings'
 import {contentWidth} from '../styles/dimens'
 import {primaryColor} from '../styles/colors'
@@ -23,7 +23,7 @@ const NavBarLink = styled(Link)`
   }
 `
 
-class TitleScreen extends React.Component {
+class TitleScreenAlternate extends React.Component {
 
   constructor() {
     super()
@@ -97,7 +97,7 @@ class TitleScreen extends React.Component {
                 textShadow: '2px 2px 0px ' + primaryColor,
               }}>
 
-              <Link to="/index-alternate/"
+              <Link to="/"
                 css={{
                   color: 'white'
                 }}>
@@ -167,4 +167,4 @@ class TitleScreen extends React.Component {
   }
 }
 
-export default TitleScreen
+export default TitleScreenAlternate
