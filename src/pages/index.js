@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import TitleScreen from '../components/TitleScreen'
+import Header from '../components/Header'
 import NavBar from '../components/NavBar'
 import About from '../components/About'
 import Service from '../components/Service'
@@ -43,7 +43,7 @@ const IndexPage = () =>
         position: 'relative',
       }}>
 
-      <TitleScreen/>
+      <Header/>
       <NavBar/>
 
       <div 

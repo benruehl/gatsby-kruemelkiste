@@ -97,12 +97,7 @@ class TitleScreen extends React.Component {
                 textShadow: '2px 2px 0px ' + primaryColor,
               }}>
 
-              <Link to="/index-alternate/"
-                css={{
-                  color: 'white'
-                }}>
-                {strings.siteTitle}
-              </Link>
+              {strings.siteTitle}
             </h1>
 
             <h2
