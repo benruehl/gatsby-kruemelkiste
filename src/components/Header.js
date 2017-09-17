@@ -23,7 +23,7 @@ const NavBarLink = styled(Link)`
   }
 `
 
-class TitleScreen extends React.Component {
+class Header extends React.Component {
 
   constructor() {
     super()
@@ -162,4 +162,4 @@ class TitleScreen extends React.Component {
   }
 }
 
-export default TitleScreen
+export default Header

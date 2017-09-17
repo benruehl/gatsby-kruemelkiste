@@ -10,7 +10,13 @@ class FooterSeparatorList extends React.Component {
 
         if (i != this.props.children.length - 1) {
           items.push(
-            <span css={{ color: 'white', margin: '0 1rem' }}>|</span>
+            <span css={{ 
+              color: 'white',
+              margin: '0 1rem',
+              '@media(max-width: 600px)': {
+                display: 'none',
+              },
+            }}>|</span>
           );
         }
     }
@@ -19,9 +25,21 @@ class FooterSeparatorList extends React.Component {
       <div
         css={{
           fontSize: '11',
+          margin: '0 11px',
           display: 'flex',
+          flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
+
+          '& span, a': {
+            lineHeight: '1.5',
+            marginTop: '0.5em',
+            marginBottom: '0.5em',
+          },
+
+          '@media(max-width: 600px)': {
+            flexDirection: 'column',
+          }
         }}>
 
         {items}

@@ -20,6 +20,11 @@ a {
   background: transparent;
 }
 
+.bannerTitle {
+  color: white;
+  font-size: calc(2rem + 2vw);
+}
+
 /*
 html {
   font-family: sans-serif;

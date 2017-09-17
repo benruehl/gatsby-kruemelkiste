@@ -36,31 +36,31 @@ const IndexPage = () =>
           position: 'fixed',
       }}>
 
-    </div>
+      </div>
 
-    <div
-      css={{
-        position: 'relative',
-      }}>
-
-      <Header/>
-      <NavBar/>
-
-      <div 
+      <div
         css={{
           position: 'relative',
-          background: 'transparent',
         }}>
 
-        <About/>
-        <Service/>
-        <Voices/>
-        <Footer/>
+        <Header/>
+        <NavBar/>
 
+        <div 
+          css={{
+            position: 'relative',
+            background: 'transparent',
+          }}>
+
+          <About/>
+          <Service/>
+          <Voices/>
+          <Footer/>
+
+        </div>
+      
+      </div>
     </div>
-    
-    </div>
-  </div>
   </div>
 
 export default IndexPage
