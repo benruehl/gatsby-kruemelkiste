@@ -16,17 +16,11 @@ class About extends React.Component {
         <div
           css={{
             width: '100%',
-            textAlign: 'center',
+            height: '100%',
+            opacity: '0.15',
+            background: 'url(' + familyTreeImg + ') center right no-repeat',
+            backgroundSize: 'cover',
           }}>
-
-          <img src={familyTreeImg} alt="" 
-            css={{
-              display: 'inline-block',
-              position: 'relative',
-              top: '-5vw',
-              minWidth: '100vw',
-              opacity: '0.3',
-            }}/>
         </div>
 
         <div name='about'>

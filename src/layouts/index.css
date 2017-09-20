@@ -20,6 +20,14 @@ a {
   background: transparent;
 }
 
+.primaryBackground {
+  background: #f6714f;
+  background: -moz-linear-gradient(-45deg, #f6714f 20%, #b446f6 100%);
+  background: -webkit-linear-gradient(-45deg, #f6714f 20%, #b446f6 100%);
+  background: linear-gradient(135deg, #f6714f 20%, #b446f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6714f", endColorstr="#b446f6", GradientType=1);
+}
+
 .bannerTitle {
   color: white;
   font-size: calc(2rem + 2vw);

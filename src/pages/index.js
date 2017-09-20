@@ -7,7 +7,6 @@ import Service from '../components/Service'
 import Voices from '../components/Voices'
 import Footer from '../components/Footer'
 import strings from '../../data/strings'
-import {primaryGradientColor1, primaryGradientColor2} from '../styles/colors'
 
 const IndexPage = () =>
   <div
@@ -25,14 +24,10 @@ const IndexPage = () =>
       }}>
 
       <div
+        className='primaryBackground'
         css={{
           width: '100%',
           height: '100%',
-          background: primaryGradientColor1,
-          background: '-moz-linear-gradient(-45deg, ' + primaryGradientColor1 + ' 0%, ' + primaryGradientColor2 + ' 100%)',
-          background: '-webkit-linear-gradient(-45deg, ' + primaryGradientColor1 + ' 0%, ' + primaryGradientColor2 + ' 100%)',
-          background: 'linear-gradient(135deg, ' + primaryGradientColor1 + ' 0%, ' + primaryGradientColor2 + ' 100%)',
-          filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="' + primaryGradientColor1 + '", endColorstr="' + primaryGradientColor2 + '", GradientType=1)',
           position: 'fixed',
       }}>
 

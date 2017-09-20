@@ -5,7 +5,6 @@ import ContractHeader from '../components/ContractHeader'
 import Contract from '../components/Contract'
 import Footer from '../components/Footer'
 import strings from '../../data/strings'
-import {primaryGradientColor1, primaryGradientColor2} from '../styles/colors'
 
 const ContractPage = () =>
   <div>

@@ -44,9 +44,9 @@ class Header extends React.Component {
   handleScroll(e) {
     e.stopPropagation();
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
-        height = document.body.clientHeight,
+        height = Math.max(window.innerHeight, document.body.clientHeight),
         vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
-        fadingOffset = vh * 0.5,
+        fadingOffset = vh * 0.25,
         fadingSpeed = height / vh * 1.5;
 
     this.setState({
@@ -64,12 +64,12 @@ class Header extends React.Component {
       <div
         css={{
           position: 'relative',
-          minHeight: 0,
           width: '100%',
           height: '50vw',
+          minHeight: '50vh',
           maxHeight: '100vh',
           overflow: 'hidden',
-          background: 'url(' + titleImg + ') center center no-repeat fixed',
+          background: 'url(' + titleImg + ') center left no-repeat fixed',
           backgroundSize: 'cover',
         }}>
 
@@ -92,8 +92,8 @@ class Header extends React.Component {
             <h1 
               css={{
                 color: 'white',
-                fontSize: '6rem',
-                fontSize: '5vw',
+                fontSize: '2rem',
+                fontSize: 'calc(2rem + 3vw)',
                 textShadow: '2px 2px 0px ' + primaryColor,
               }}>
 
@@ -103,8 +103,8 @@ class Header extends React.Component {
             <h2
               css={{
                 color: 'rgba(255, 255, 255, .5)',
-                fontSize: '3rem',
-                fontSize: '3vw',
+                fontSize: '1.5rem',
+                fontSize: 'calc(1.25rem + 1.5vw)',
                 textShadow: '1px 1px 0px ' + primaryColor,
               }}>
 
