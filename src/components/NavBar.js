@@ -1,9 +1,25 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
 
 import strings from '../../data/strings'
 import {navBarFgColor, navBarBgColor} from '../styles/colors'
 import {contentWidth} from '../styles/dimens'
+
+const NavBarItem = styled.h4`
+  margin: 0;
+  margin-left: 2rem;
+  color: white;
+`
+
+const NavBarLink = styled(Link)`
+  color: #404040;
+  transition: color 100ms linear;
+
+  &:hover {
+    color: ${navBarFgColor};
+  }
+`
 
 class NavBar extends React.Component {
 
@@ -11,7 +27,8 @@ class NavBar extends React.Component {
     super()
     this.state = {
       scrollOpacity: 0,
-      scrollDisplay: 'none'
+      scrollDisplay: 'none',
+      lastScrollPosition: 0,
     };
     this.handleScroll = this.handleScroll.bind(this)
   }
@@ -26,11 +43,17 @@ class NavBar extends React.Component {
 
   handleScroll(e) {
     e.stopPropagation();
+    
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
         height = document.body.clientHeight,
-        vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
+        scrollingUp = scrollTop < this.state.lastScrollPosition;
 
-    if (scrollTop > vh) {
+    this.setState({
+      lastScrollPosition: scrollTop,
+    });
+
+    if (scrollingUp && scrollTop > vh) {
       this.setState({
         scrollOpacity: 1,
       });
@@ -66,11 +89,11 @@ class NavBar extends React.Component {
           WebkitBoxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
           MozBoxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
           boxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
-          WebkitTransition: 'opacity .5s ease-in-out',
-          MozTransition: 'opacity .5s ease-in-out',
-          MsTransition: 'opacity .5s ease-in-out',
-          OTransition: 'opacity .5s ease-in-out',
-          transition: 'opacity .5s ease-in-out',
+          WebkitTransition: 'opacity .25s ease-in-out',
+          MozTransition: 'opacity .25s ease-in-out',
+          MsTransition: 'opacity .25s ease-in-out',
+          OTransition: 'opacity .25s ease-in-out',
+          transition: 'opacity .25s ease-in-out',
         }}>
 
         <div
@@ -102,19 +125,23 @@ class NavBar extends React.Component {
               justifyContent: 'flex-end',
             }}>
 
-            <h4 style={{ margin: 0, marginLeft: '2rem' }}>
-              {strings.serviceCaption}
-            </h4>
+            <NavBarItem>
+              <NavBarLink to="/service/">
+                {strings.serviceCaption}
+              </NavBarLink>
+            </NavBarItem>
 
-            <h4 style={{ margin: 0, marginLeft: '2rem' }}>
-              <Link to="/contract/">
+            <NavBarItem>
+              <NavBarLink to="/contract/">
                 {strings.contractCaption}
-              </Link>
-            </h4>
+              </NavBarLink>
+            </NavBarItem>
 
-            <h4 style={{ margin: 0, marginLeft: '2rem' }}>
-              {strings.contactCaption}
-            </h4>
+            <NavBarItem>
+            <NavBarLink to="/contact/">
+                {strings.contactCaption}
+              </NavBarLink>
+            </NavBarItem>
 
           </div>
 

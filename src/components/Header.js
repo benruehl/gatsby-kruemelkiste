@@ -142,7 +142,9 @@ class Header extends React.Component {
             </NavBarItem>
 
             <NavBarItem>
-              {strings.serviceCaption}
+              <NavBarLink to="/service/">
+                {strings.serviceCaption}
+              </NavBarLink>
             </NavBarItem>
 
             <NavBarItem>
@@ -152,7 +154,9 @@ class Header extends React.Component {
             </NavBarItem>
 
             <NavBarItem>
-              {strings.contactCaption}
+              <NavBarLink to="/contact/">
+                {strings.contactCaption}
+              </NavBarLink>
             </NavBarItem>
 
           </div>

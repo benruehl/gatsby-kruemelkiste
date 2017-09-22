@@ -21,6 +21,7 @@ class SectionContainer extends React.Component {
             textAlign: 'left',
             paddingTop: '2rem',
             paddingBottom: '2rem',
+            width: '100%',
           }}>
 
           {this.props.children}
