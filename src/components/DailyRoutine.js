@@ -14,7 +14,7 @@ const DailyItem = styled.div`
   background: #f0f0f0;
   
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     background: #f8f8f8;
   }
 
@@ -74,6 +74,7 @@ class DailyRoutine extends React.Component {
                 display: 'flex',
                 flexDirection: 'column',
                 borderTop: '4px solid #d0d0d0',
+                marginBottom: '2em',
               }}>
 
               <DailyItem>
@@ -157,6 +158,8 @@ class DailyRoutine extends React.Component {
                 </ItemActivity>
               </DailyItem>
             </div>
+
+            <p>Der Tagesablauf versteht sich als Rahmen. Die Zeiten können je nach Alter der Kinder, nach Jahreszeit und Wettersituation variieren.</p>
 
           </div>
         </SectionContainer>
