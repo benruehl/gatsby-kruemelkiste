@@ -1,14 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import ContractHeader from '../components/ContractHeader'
+import Header from '../components/BannerHeader'
 import Contract from '../components/Contract'
 import Footer from '../components/Footer'
 import strings from '../../data/strings'
+import headerImg from '../img/banner-crayons.jpg'
 
 const ContractPage = () =>
   <div>
-    <ContractHeader/>
+    <Header caption={strings.contractCaption} backgroundImage={headerImg} gradientTopLeft='#ae7e66' gradientBottomRight='#8bbfdd'/>
     <Contract/>
     <Footer/>
   </div>

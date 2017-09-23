@@ -28,11 +28,6 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6714f", endColorstr="#b446f6", GradientType=1);
 }
 
-.bannerTitle {
-  color: white;
-  font-size: calc(2rem + 2vw);
-}
-
 /*
 html {
   font-family: sans-serif;
