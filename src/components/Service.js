@@ -23,25 +23,42 @@ class Service extends React.Component {
           }}>
         </div>
 
-        <SectionContainer>
+        <div>
+
+          <SectionContainer>
+            <h1>Individuelle und liebevolle Betreuung</h1>
+          </SectionContainer>
 
           <div
             css={{
+              background: '#f0f0f0',
+              background: '-webkit-linear-gradient(30deg, #e0e0e0 35%, #f0f0f0 35%)',
             }}>
+            <SectionContainer>
+              <TextWithImageContainer image={kidWithCarsImg} imagePosition='left'>
+                <p>Tageskinder im Alter bis zu 3 Jahren werden von mir liebevoll und individuell betreut. Wir sind ein Nichtraucherhaushalt.</p>
+                <span>Wir haben ein kindgerechtes, farbenfrohes Spielzimmer mit einem Kletterhäuschen, Tobe- und Kuschelmatratze und vielen Bewegungselementen. Spannende Spielelemente, wie die große Holzeisenbahn, die Murmelbahn, jede Menge Bausteine, Autos, Bücher, Spiele, Handpuppen, einfache Musikinstrumente u.s.w. wecken die kreative Neugier der Kinder.</span>
+              </TextWithImageContainer>
+            </SectionContainer>
+          </div>
 
-            <h1>Individuelle und liebevolle Betreuung</h1>
+          <SectionContainer>
+            <span>Grundlage für meine Arbeit ist die situationsbezogene Pädagogik, d.h. ich greife Themen, Ideen und Anregungen auf, die die Kinder in die Tagespflege mitbringen, und entwickle sie gemeinsam mit den Kindern weiter. Jedes Kind wird entsprechend seines Alters und seines Entwicklungsstandes individuell gefördert.</span>
+          </SectionContainer>
 
-            <TextWithImageContainer image={kidWithCarsImg} imagePosition='left'>
-              <p>Tageskinder im Alter bis zu 3 Jahren werden von mir liebevoll und individuell betreut. Wir sind ein Nichtraucherhaushalt.</p>
-              <span>Wir haben ein kindgerechtes, farbenfrohes Spielzimmer mit einem Kletterhäuschen, Tobe- und Kuschelmatratze und vielen Bewegungselementen. Spannende Spielelemente, wie die große Holzeisenbahn, die Murmelbahn, jede Menge Bausteine, Autos, Bücher, Spiele, Handpuppen, einfache Musikinstrumente u.s.w. wecken die kreative Neugier der Kinder.</span>
-            </TextWithImageContainer>
+          <div
+            css={{
+              background: '#f0f0f0',
+              background: '-webkit-linear-gradient(-30deg, #f0f0f0 65%, #e0e0e0 65%)',
+            }}>
+            <SectionContainer>
+              <TextWithImageContainer image={cartImg} imagePosition='right'>
+                <span>Täglich sind wir an der frischen Luft, beobachten die Natur in ihrer Vielfältigkeit und besuchen die Spielplätze in der Umgebung. Bewegung wird bei uns "groß" geschrieben. Wir singen viel und machen erste, frühe Erfahrungen mit Musik- und Klanginstrumenten. Es wird  gemalt, geknetet, gebastelt – häufig in Bezug auf die Jahreszeiten und deren typische Besonderheiten. Kinderbücher, Fingerspiele und Verse spielen für die Förderung der Sprache eine große Rolle.</span>
+              </TextWithImageContainer>
+            </SectionContainer>
+          </div>
 
-            <p>Grundlage für meine Arbeit ist die situationsbezogene Pädagogik, d.h. ich greife Themen, Ideen und Anregungen auf, die die Kinder in die Tagespflege mitbringen, und entwickle sie gemeinsam mit den Kindern weiter. Jedes Kind wird entsprechend seines Alters und seines Entwicklungsstandes individuell gefördert.</p>
-            
-            <TextWithImageContainer image={cartImg} imagePosition='right'>
-              <span>Täglich sind wir an der frischen Luft, beobachten die Natur in ihrer Vielfältigkeit und besuchen die Spielplätze in der Umgebung. Bewegung wird bei uns "groß" geschrieben. Wir singen viel und machen erste, frühe Erfahrungen mit Musik- und Klanginstrumenten. Es wird  gemalt, geknetet, gebastelt – häufig in Bezug auf die Jahreszeiten und deren typische Besonderheiten. Kinderbücher, Fingerspiele und Verse spielen für die Förderung der Sprache eine große Rolle.</span>
-            </TextWithImageContainer>
-
+          <SectionContainer>
             <p>Die  Kinder erlernen die tägliche Hygiene, wie das Händewaschen, Töpfchen- oder Toilettengang und das Zähneputzen. Die Selbständigkeit wird dabei altersgerecht gefördert, genauso wie ein faires und freundliches Miteinander in der Gruppe.</p>
 
             <div
@@ -58,9 +75,8 @@ class Service extends React.Component {
                 <b>Betreuungszeiten:</b> Montag - Freitag / 8.00 - 16.30 Uhr
               </p>
             </div>
-
-          </div>
-        </SectionContainer>
+          </SectionContainer>
+        </div>
       </BackgroundContentContainer>
     )
   }

@@ -65,7 +65,6 @@ class TextWithImageContainer extends React.Component {
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'stretch',
-          marginBottom: '2em',
 
           '@media(max-width: 640px)': {
             flexDirection: 'column',
