@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const ImageWrapper = styled.div`
   flex: 1 1 0;
   align-self: center;
-  border: 4px solid #d0d0d0;
+  border: 4px solid white;
   padding: 4px;
 `
 

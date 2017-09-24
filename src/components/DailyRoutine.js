@@ -70,10 +70,11 @@ class DailyRoutine extends React.Component {
             <h1>Tagesablauf</h1>
 
             <div
+              className='primaryBackground'
               css={{
                 display: 'flex',
                 flexDirection: 'column',
-                borderTop: '4px solid #d0d0d0',
+                paddingLeft: '8px',
                 marginBottom: '2em',
               }}>
 

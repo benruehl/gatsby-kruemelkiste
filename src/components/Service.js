@@ -31,8 +31,10 @@ class Service extends React.Component {
 
           <div
             css={{
-              background: '#f0f0f0',
-              background: '-webkit-linear-gradient(30deg, #e0e0e0 35%, #f0f0f0 35%)',
+              background: '#FFC7B9',
+              background: '-moz-linear-gradient(30deg, #FFE7E0 35%, #FFF7F5 35%)',
+              background: '-webkit-linear-gradient(30deg, #FFE7E0 35%, #FFF7F5 35%)',
+              background: 'linear-gradient(-300deg, #FFE7E0 35%, #FFF7F5 35%)',
             }}>
             <SectionContainer>
               <TextWithImageContainer image={kidWithCarsImg} imagePosition='left'>
@@ -48,8 +50,10 @@ class Service extends React.Component {
 
           <div
             css={{
-              background: '#f0f0f0',
-              background: '-webkit-linear-gradient(-30deg, #f0f0f0 65%, #e0e0e0 65%)',
+              background: '#FFD098',
+              background: '-moz-linear-gradient(-30deg, #F6EFF0 65%, #F6DDE1 65%)',
+              background: '-webkit-linear-gradient(-30deg, #F6EFF0 65%, #F6DDE1 65%)',
+              background: 'linear-gradient(-60deg, #F6DDE1 35%, #F6EFF0 35%)',
             }}>
             <SectionContainer>
               <TextWithImageContainer image={cartImg} imagePosition='right'>
