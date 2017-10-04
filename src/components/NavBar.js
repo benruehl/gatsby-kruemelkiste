@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
+import MenuButton from '../components/MenuButton'
+
 import strings from '../../data/strings'
 import {navBarFgColor, navBarBgColor} from '../styles/colors'
 import {contentWidth} from '../styles/dimens'
@@ -9,7 +11,11 @@ import {contentWidth} from '../styles/dimens'
 const NavBarItem = styled.h4`
   margin: 0;
   margin-left: 2rem;
-  color: white;
+  color: #404040;
+
+  @media (max-width: 800px) {
+    margin: .75em 0;
+  }
 `
 
 const NavBarLink = styled(Link)`
@@ -21,6 +27,8 @@ const NavBarLink = styled(Link)`
   }
 `
 
+const menuBreakpointWidth = 800;
+
 class NavBar extends React.Component {
 
   constructor() {
@@ -28,7 +36,6 @@ class NavBar extends React.Component {
     this.state = {
       scrollOpacity: 0,
       scrollDisplay: 'none',
-      lastScrollPosition: 0,
     };
     this.handleScroll = this.handleScroll.bind(this)
   }
@@ -45,15 +52,20 @@ class NavBar extends React.Component {
     e.stopPropagation();
     
     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
-        height = document.body.clientHeight,
+        height = Math.max(window.innerHeight, document.body.clientHeight),
         vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
-        scrollingUp = scrollTop < this.state.lastScrollPosition;
+        width = Math.max(window.innerWidth, document.body.clientWidth);
 
-    this.setState({
-      lastScrollPosition: scrollTop,
-    });
+    if (width <= menuBreakpointWidth) { // show always on mobile devices
+      this.setState({
+        scrollOpacity: 1,
+        scrollDisplay: 'block',
+      });
 
-    if (scrollingUp && scrollTop > vh) {
+      return;
+    }
+
+    if (scrollTop > vh) {
       this.setState({
         scrollOpacity: 1,
       });
@@ -84,6 +96,7 @@ class NavBar extends React.Component {
           width: '100%',
           top: 0,
           zIndex: 100,
+          padding: '0 2vw',
           opacity: this.state.scrollOpacity,
           display: this.state.scrollDisplay,
           WebkitBoxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
@@ -97,7 +110,7 @@ class NavBar extends React.Component {
         }}>
 
         <div
-          style={{
+          css={{
             margin: '0 auto',
             maxWidth: contentWidth,
             padding: '0.75rem 0',
@@ -106,7 +119,7 @@ class NavBar extends React.Component {
             alignItems: 'baseline',
           }}>
 
-          <h2 style={{ margin: 0 }}>
+          <h2 style={{ margin: 0, zIndex: 100 }}>
             <Link
               to="/"
               style={{
@@ -120,9 +133,58 @@ class NavBar extends React.Component {
 
           <div
             css={{
+              display: 'none',
+              flex: '1 1 auto',
+              justifyContent: 'flex-end',
+
+              '@media (max-width: 800px)': {
+                display: 'flex',
+              },
+            }}>
+
+            <label htmlFor='menuStateCheckbox' style={{ zIndex: '100' }}>
+              <MenuButton/>
+            </label>
+          </div>
+
+          <input
+            id='menuStateCheckbox'
+            type='checkbox'
+            css={{
+              display: 'none',
+
+              '&:checked + #navBar': {
+                position: 'fixed',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'space-evenly',
+                top: 0,
+                left: 0,
+                width: '100%',
+                background: 'white',
+                padding: '5vh',
+                paddingTop: '4.5em',
+                WebkitBoxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
+                MozBoxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
+                boxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
+              },
+
+              '&:checked body': {
+                overflow: 'hidden',
+              }
+            }}/>
+            
+          <div
+            id='navBar'
+            css={{
               display: 'flex',
               flex: '1 1 auto',
               justifyContent: 'flex-end',
+
+              '@media (max-width: 800px)': {
+                display: 'none',
+              },
             }}>
 
             <NavBarItem>
@@ -138,7 +200,7 @@ class NavBar extends React.Component {
             </NavBarItem>
 
             <NavBarItem>
-            <NavBarLink to="/contact/">
+              <NavBarLink to="/contact/">
                 {strings.contactCaption}
               </NavBarLink>
             </NavBarItem>

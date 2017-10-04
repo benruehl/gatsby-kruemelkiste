@@ -54,11 +54,6 @@ class Header extends React.Component {
     });
   }
 
-  scrollToAbout() {
-    console.log('scroll to about')
-    console.log(this)
-  }
-
   render() {
     return (
       <div
@@ -121,7 +116,11 @@ class Header extends React.Component {
             position: 'absolute',
             top: 0,
             width: '100%',
-            padding: '1.75rem 0',
+            padding: '1.75rem 2vw',
+
+            '@media (max-width: 800px)': {
+              display: 'none',
+            },
           }}>
 
           <div
