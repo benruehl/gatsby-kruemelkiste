@@ -61,7 +61,7 @@ class Header extends React.Component {
         css={{
           width: '100%',
           height: '50vw',
-          minHeight: '50vh',
+          minHeight: '60vh',
           maxHeight: '100vh',
           overflow: 'hidden',
           background: 'transparent',backgroundSize: 'cover',
@@ -75,7 +75,7 @@ class Header extends React.Component {
           '@media (max-width: 800px), (max-aspect-ratio: 4/3)': {
             background: 'url(' + titleImgAlt + ') center center no-repeat fixed',
             backgroundSize: 'cover',
-          }
+          },
         }}>
 
         <div 
@@ -90,7 +90,7 @@ class Header extends React.Component {
 
           <div
             css={{
-              margin: '2rem 0',
+              margin: '4rem 0',
               marginLeft: '6vw',
               marginBottom: '3vw',
               textAlign: 'left',
