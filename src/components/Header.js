@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import titleImg from '../img/kid-soap-bubbles.jpg'
+import titleImgAlt from '../img/kid-soap-bubbles-alt.jpg'
 import strings from '../../data/strings'
 import {contentWidth} from '../styles/dimens'
 import {primaryColor} from '../styles/colors'
@@ -58,23 +59,30 @@ class Header extends React.Component {
     return (
       <div
         css={{
-          position: 'relative',
           width: '100%',
           height: '50vw',
           minHeight: '50vh',
           maxHeight: '100vh',
           overflow: 'hidden',
-          background: 'url(' + titleImg + ') center center no-repeat fixed',
+          background: 'transparent',backgroundSize: 'cover',
           backgroundSize: 'cover',
 
-          '@media (max-width: 700px), (max-aspect-ratio: 11/9)': {
-            background: 'transparent',
+          '@media (min-width: 801px) and (min-aspect-ratio: 4/3)': {
+            background: 'url(' + titleImg + ') center center no-repeat fixed',
+            backgroundSize: 'cover',
+          },
+
+          '@media (max-width: 800px), (max-aspect-ratio: 4/3)': {
+            background: 'url(' + titleImgAlt + ') center center no-repeat fixed',
+            backgroundSize: 'cover',
           }
         }}>
 
         <div 
           css={{
-            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-end',
             width: '100%',
             height: '100%',
             opacity: this.state.scrollOpacity,
@@ -82,14 +90,13 @@ class Header extends React.Component {
 
           <div
             css={{
-              position: 'absolute',
-              left: '6vw',
-              bottom: '2vw',
+              margin: '2rem 0',
+              marginLeft: '6vw',
+              marginBottom: '3vw',
               textAlign: 'left',
-              padding: '2rem 0',
 
               '@media (max-width: 1400px)': {
-                left: '2vw',
+                marginLeft: '2vw',
               }
             }}>
 

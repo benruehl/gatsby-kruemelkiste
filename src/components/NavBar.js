@@ -33,18 +33,21 @@ class NavBar extends React.Component {
 
   constructor() {
     super()
-
-    var isScreenDevice = Math.max(window.innerWidth, document.body.clientWidth) > menuBreakpointWidth;
-
     this.state = {
-      scrollOpacity: isScreenDevice ? 0 : 1,
-      scrollDisplay: isScreenDevice ? 'none' : 'block',
+      scrollOpacity: 0,
+      scrollDisplay: 'none',
     };
     this.handleScroll = this.handleScroll.bind(this)
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll, {passive: true});
+
+    var isScreenDevice = Math.max(window.innerWidth, document.body.clientWidth) > menuBreakpointWidth;
+    this.state = {
+      scrollOpacity: isScreenDevice ? 0 : 1,
+      scrollDisplay: isScreenDevice ? 'none' : 'block',
+    };
   }
 
   componentWillUnmount() {
