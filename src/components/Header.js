@@ -64,8 +64,12 @@ class Header extends React.Component {
           minHeight: '50vh',
           maxHeight: '100vh',
           overflow: 'hidden',
-          background: 'url(' + titleImg + ') center left no-repeat fixed',
+          background: 'url(' + titleImg + ') center center no-repeat fixed',
           backgroundSize: 'cover',
+
+          '@media (max-width: 700px), (max-aspect-ratio: 11/9)': {
+            background: 'transparent',
+          }
         }}>
 
         <div 
@@ -77,11 +81,16 @@ class Header extends React.Component {
           }}>
 
           <div
-            style={{
+            css={{
               position: 'absolute',
               left: '6vw',
-              bottom: '5vw',
+              bottom: '2vw',
               textAlign: 'left',
+              padding: '2rem 0',
+
+              '@media (max-width: 1400px)': {
+                left: '2vw',
+              }
             }}>
 
             <h1 
