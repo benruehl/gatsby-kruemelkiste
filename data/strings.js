@@ -7,5 +7,5 @@ module.exports = {
   contractCaption: "Kosten & Vertrag",
   contactCaption: "Kontakt",
   serviceCaption: "Mein Angebot",
-  siteNoticeCaption: "Impressum",
+  siteNoticeCaption: "Impressum & Datenschutz",
 }
