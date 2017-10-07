@@ -23,9 +23,9 @@ class ServiceTeaser extends React.Component {
     return (
       <div>
         <PrimaryBackgroundContainer>
-          <SectionContainer background='transparent'>
+          <SectionContainer background='white'>
 
-            <h1 css={{ color: 'white' }}>
+            <h1>
               Mein Angebot
             </h1>
 
@@ -39,10 +39,7 @@ class ServiceTeaser extends React.Component {
                 justifyContent: 'space-between',
               }}>
 
-              <div
-                css={{
-                  color: 'white',
-                }}>
+              <div>
 
                 <p>Tageskinder im Alter bis zu 3 Jahren werden von mir liebevoll und individuell betreut. Wir sind ein Nichtraucherhaushalt.</p>
                 <p>Wir haben ein kindgerechtes, farbenfrohes Spielzimmer mit einem Kletterhäuschen, Tobe- und Kuschelmatratze und vielen Bewegungselementen. Spannende Spielelemente ,wie die große Holzeisenbahn, die Murmelbahn, jede Menge Bausteine, Autos, Bücher, Spiele, Handpuppen, einfache Musikinstrumente u.s.w. wecken die kreative Neugier der Kinder.</p>

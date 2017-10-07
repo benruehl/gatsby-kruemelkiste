@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
+
 import Header from '../components/Header'
 import NavBar from '../components/NavBar'
 import About from '../components/About'
+import Maps from '../components/Maps'
 import Service from '../components/ServiceTeaser'
 import Voices from '../components/Voices'
 import Footer from '../components/Footer'
@@ -48,6 +50,7 @@ const IndexPage = () =>
           }}>
 
           <About/>
+          <Maps/>
           <Service/>
           <Voices/>
           <Footer/>
