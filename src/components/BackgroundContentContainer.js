@@ -9,7 +9,6 @@ class BackgroundContentContainer extends React.Component {
       <div
         css={{
           position: 'relative',
-          overflow: 'hidden',
           background: this.props.background,
         }}
       >
@@ -34,7 +33,7 @@ class BackgroundContentContainer extends React.Component {
           }}
         >
 
-          {this.props.children[1]}
+          {this.props.children.slice(1)}
         
         </div>
       </div>

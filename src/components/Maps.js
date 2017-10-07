@@ -31,16 +31,13 @@ class Maps extends React.Component {
               }}>
 
               <div
+                className='materialCard1'
                 css={{
                   zIndex: 1,
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
                   padding: '1rem 3rem',
-                  background: 'rgba(255, 255, 255, 1)',
-                  border: '.25rem solid rgba(255, 255, 255, 0.5)',
-                  backgroundClip: 'padding-box',
-                  MozBackgroundClip: 'padding',
                 }}>
 
                 <div>Gounodstraße 101</div>

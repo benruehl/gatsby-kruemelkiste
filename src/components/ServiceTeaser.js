@@ -1,14 +1,49 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import styled from 'styled-components'
 
+import abstractRingsImg from '../img/abstract-rings.svg'
 import kidBallPitImg from '../img/kid-ball-pit.jpg'
 import kidPaintingImg from '../img/kid-painting.jpg'
 import kidCarsImg from '../img/kid-cars.jpg'
 import SectionContainer from '../components/SectionContainer'
-import PrimaryBackgroundContainer from '../components/PrimaryBackgroundContainer'
+import BackgroundContentContainer from '../components/BackgroundContentContainer'
+import Button from '../components/Button'
 
 //import {headerColor} from '../styles/colors'
 import strings from '../../data/strings'
+
+const FeatureRow = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  &:not(:last-child) {
+		border-bottom: 1px solid #e0e0e0;
+  }
+  
+  @media (max-width: 500px) {
+    flex-direction: column;
+    border-width: 0!important;
+  }
+`
+
+const FeatureQuad = styled.div`
+  flex: 1 1 0;
+  padding: calc(1rem + 1vw) 2vw;
+
+  &:not(:last-child) {
+		border-right: 1px solid #e0e0e0;
+	}
+
+  h4 {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  @media (max-width: 500px) {
+    border-width: 0!important;
+  }
+`
 
 const ImageWrapper = styled.figure`
   max-width: 100%;
@@ -22,8 +57,19 @@ class ServiceTeaser extends React.Component {
   render() {
     return (
       <div>
-        <PrimaryBackgroundContainer>
-          <SectionContainer background='white'>
+        <BackgroundContentContainer background='white'>
+        
+          <div
+            css={{
+              width: '100%',
+              height: '100%',
+              opacity: '0.15',
+              background: 'url(' + abstractRingsImg + ') center center no-repeat',
+              backgroundSize: 'cover',
+            }}>
+          </div>
+
+          <SectionContainer background='transparent'>
 
             <h1>
               Mein Angebot
@@ -34,19 +80,56 @@ class ServiceTeaser extends React.Component {
                 display: 'flex',
                 flexDirection: 'column',
                 flexWrap: 'no-wrap',
-                alignItems: 'center',
+                alignItems: 'stretch',
                 alignContent: 'center',
                 justifyContent: 'space-between',
               }}>
 
-              <div>
+              <p>Tageskinder im Alter bis zu 3 Jahren werden von mir liebevoll und individuell betreut. Wir sind ein Nichtraucherhaushalt. Bei der Betreuung der Kindern lege ich auf einige Aspekte besonderen Wert.</p>
 
-                <p>Tageskinder im Alter bis zu 3 Jahren werden von mir liebevoll und individuell betreut. Wir sind ein Nichtraucherhaushalt.</p>
-                <p>Wir haben ein kindgerechtes, farbenfrohes Spielzimmer mit einem Kletterhäuschen, Tobe- und Kuschelmatratze und vielen Bewegungselementen. Spannende Spielelemente ,wie die große Holzeisenbahn, die Murmelbahn, jede Menge Bausteine, Autos, Bücher, Spiele, Handpuppen, einfache Musikinstrumente u.s.w. wecken die kreative Neugier der Kinder.</p>
-                <p>Grundlage für meine Arbeit ist die situationsbezogene Pädagogik, d.h. ich greife Themen, Ideen und Anregungen, die die Kinder in die Tagespflege mitbringen, auf und entwickle sie gemeinsam mit den Kindern weiter. Jedes Kind wird entsprechend seines Alters und seines Entwicklungsstandes individuell gefördert.</p>
-                <p>Täglich sind wir an der frischen Luft, beobachten die Natur in ihrer Vielfältigkeit und besuchen die Spielplätze in der Umgebung. Bewegung wird bei uns "groß" geschrieben.Wir singen viel und machen erste, frühe Erfahrungen mit Musik- und Klanginstrumenten. Es wird  gemalt, geknetet, gebastelt – häufig in Bezug auf die Jahreszeiten und deren typische Besonderheiten. Kinderbücher, Fingerspiele und Verse spielen für die Förderung der deutschen Sprache eine große Rolle.</p>
-                <p>Die  Kinder erlernen die tägliche Hygiene, wie das Händewaschen, Töpfchen- oder Toilettengang und das Zähneputzen. Die Selbständigkeit wird dabei altersgerecht gefördert, genauso wie ein faires und freundliches Miteinander in der Gruppe.</p>
+              <div
+                className='materialCard1'
+                css={{
+                  marginTop: '1.5rem',
+                  marginBottom: '3rem',
+                  padding: '1vw',
+                }}>
 
+                <FeatureRow>
+                  <FeatureQuad>
+                    <h4>Frische Luft und Bewegung</h4>
+                    <div>Täglich sind wir an der frischen Luft, beobachten die Natur in ihrer Vielfältigkeit und besuchen die Spielplätze in der Umgebung.</div>
+                  </FeatureQuad>
+                  <FeatureQuad>
+                    <h4>Malen, Basteln, Singen, Spielen</h4>
+                    <div>Neben einem Kletterhäuschen, Tobe- und Kuschelmatratze sind natürlich jede Menge Spielelemente wie Holzeisenbahn, Bausteine, Bücher und einfache Musikinstrumente vorhanden.</div>
+                  </FeatureQuad>
+                </FeatureRow>
+
+                <FeatureRow>
+                  <FeatureQuad>
+                    <h4>Tägliche Hygiene</h4>
+                    <div>Die Kinder erlernen die tägliche Hygiene, wie das Händewaschen, Töpfchen- oder Toilettengang und das Zähneputzen.</div>
+                  </FeatureQuad>
+                  <FeatureQuad>
+                    <h4>Faires und freundliches Miteinander in der Gruppe</h4>
+                    <div>Der richtige Umgang mit anderen Kindern muss erst erlernt werden. Hierbei werden behutsam soziale Werte wie Gerechtigkeit vermittelt.</div>
+                  </FeatureQuad>
+                </FeatureRow>
+              </div>
+
+              <p>Alter und Entwicklungsstand werden dabei stets individuell gefördert. Je nach Situation wird auch auf Interessen und Ideen der Kinder eingegangen.</p>
+
+              <div 
+                css={{
+                  alignSelf: 'center',
+                  margin: '2rem 0 5rem 0',
+                }}>
+
+                <Button 
+                  linkTo='/service/'
+                  caption='Mehr erfahren'>
+                </Button>
               </div>
 
               <div 
@@ -76,7 +159,7 @@ class ServiceTeaser extends React.Component {
             </div>
             
           </SectionContainer>
-        </PrimaryBackgroundContainer>
+        </BackgroundContentContainer>
 
         <div
           css={{
