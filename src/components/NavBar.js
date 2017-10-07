@@ -27,8 +27,6 @@ const NavBarLink = styled(Link)`
   }
 `
 
-const menuBreakpointWidth = 800;
-
 class NavBar extends React.Component {
 
   constructor() {
@@ -42,12 +40,6 @@ class NavBar extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll, {passive: true});
-
-    var isScreenDevice = Math.max(window.innerWidth, document.body.clientWidth) > menuBreakpointWidth;
-    this.state = {
-      scrollOpacity: isScreenDevice ? 0 : 1,
-      scrollDisplay: isScreenDevice ? 'none' : 'block',
-    };
   }
 
   componentWillUnmount() {
@@ -61,15 +53,6 @@ class NavBar extends React.Component {
         height = Math.max(window.innerHeight, document.body.clientHeight),
         vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
         width = Math.max(window.innerWidth, document.body.clientWidth);
-
-    if (width <= menuBreakpointWidth) { // show always on mobile devices
-      this.setState({
-        scrollOpacity: 1,
-        scrollDisplay: 'block',
-      });
-
-      return;
-    }
 
     if (scrollTop > vh) {
       this.setState({
@@ -113,6 +96,11 @@ class NavBar extends React.Component {
           MsTransition: 'opacity .25s ease-in-out',
           OTransition: 'opacity .25s ease-in-out',
           transition: 'opacity .25s ease-in-out',
+
+          '@media (max-width: 800px)': {
+            opacity: '1',
+            display: 'block',
+          }
         }}>
 
         <div
