@@ -74,7 +74,7 @@ class ServiceTeaser extends React.Component {
                 justifyContent: 'space-between',
               }}>
 
-              <p>Tageskinder im Alter bis zu 3 Jahren werden von mir liebevoll und individuell betreut. Wir sind ein Nichtraucherhaushalt. Bei der Betreuung der Kindern lege ich auf einige Aspekte besonderen Wert.</p>
+              <p>Tageskinder im Alter bis zu 3 Jahren werden von mir liebevoll und individuell betreut. Wir sind ein Nichtraucherhaushalt. Bei der Betreuung der Kinder lege ich auf einige Aspekte besonderen Wert.</p>
 
               <div
                 className='materialCard1'
@@ -102,7 +102,7 @@ class ServiceTeaser extends React.Component {
                   </FeatureQuad>
                   <FeatureQuad>
                     <h4>Faires und freundliches Miteinander in der Gruppe</h4>
-                    <div>Der richtige Umgang mit anderen Kindern muss erst erlernt werden. Hierbei werden behutsam soziale Werte wie Gerechtigkeit vermittelt.</div>
+                    <div>Der richtige Umgang mit anderen Kindern muss erst erlernt werden. Hierbei werden behutsam soziale Werte vermittelt.</div>
                   </FeatureQuad>
                 </FeatureRow>
               </div>

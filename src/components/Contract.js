@@ -74,7 +74,7 @@ class Contract extends React.Component {
 
                 <ColumnBody>
                   <ol>
-                    <li>Antragsformular (<a href='http://www.berlin.de/ba-pankow/verwaltung/jugend/fd5-downloads.html'>Link</a>)</li>
+                    <li>Antragsformular (<a href='http://www.berlin.de/jugendamt-pankow/dienste-und-leistungen/kindertagesbetreuung/kita/'>Link</a>)</li>
                     <li>Unterschrift beider Sorgeberechtigter</li>
                     <li>Einkommensnachweis</li>
                     <li>Bescheinigung des Arbeitgebers</li>
@@ -112,7 +112,7 @@ class Contract extends React.Component {
               </TableColumn>
             </div>
 
-            <p>Vereinbart am besten einen Termin über <a href='www.berlin.de/ba-pankow/verwaltung/jugend/fachdienst5.html'>die Webite des Jugendamts Pankow</a> oder telefonisch unter 9 02 95 56 89 während der Öffnungszeiten.</p>
+            <p>Vereinbart am besten einen Termin über <a href='https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=1&dienstleister=324903&anliegen%5B%5D=324873&herkunft=http%3A%2F%2Fservice.berlin.de%2Fdienstleistung%2F324873%2F'>die Webite des Jugendamts Pankow</a> oder telefonisch unter 9 02 95 56 89 während der Öffnungszeiten.</p>
             <p>Die Kosten der Kinderbetreuung sind einkommensabhängig und bei Kita und Tagespflege gleich.</p>
           
           </div>

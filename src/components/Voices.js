@@ -51,7 +51,7 @@ class About extends React.Component {
                 Ich bin sehr froh, dass du meine beiden Jungs in den ersten Jahren begleitet hast und noch begleitest. Ich könnte mir keine bessere Betreuung vorstellen.
 
                 <footer>
-                  <cite>Reinhold</cite>
+                  <cite>Jenny</cite>
                 </footer>
               </blockquote>
             </QuoteWrapper>
@@ -71,7 +71,7 @@ class About extends React.Component {
                 Ich bin sehr froh und beruhigt, dass meine Enkelin Anouari bei Ihnen in der Tagespflege ist. Da stimmt einfach alles! Super Atmosphäre, nette Leute, ausgezeichnete Pflege und Betreuung, einfach rundum gut. Besser hätte sie es nicht treffen können.
 
                 <footer>
-                  <cite>Jenny</cite>
+                  <cite>Reinhold</cite>
                 </footer>
               </blockquote>
             </QuoteWrapper>
