@@ -6,6 +6,7 @@ import NavBar from '../components/NavBar'
 import About from '../components/About'
 import Maps from '../components/Maps'
 import Service from '../components/ServiceTeaser'
+import ImageBar from '../components/ImageBar'
 import Voices from '../components/Voices'
 import Footer from '../components/Footer'
 import strings from '../../data/strings'
@@ -52,6 +53,7 @@ const IndexPage = () =>
           <About/>
           <Maps/>
           <Service/>
+          <ImageBar/>
           <Voices/>
           <Footer/>
 

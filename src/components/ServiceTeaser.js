@@ -3,9 +3,6 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import abstractRingsImg from '../img/abstract-rings.svg'
-import kidBallPitImg from '../img/kid-ball-pit.jpg'
-import kidPaintingImg from '../img/kid-painting.jpg'
-import kidCarsImg from '../img/kid-cars.jpg'
 import SectionContainer from '../components/SectionContainer'
 import BackgroundContentContainer from '../components/BackgroundContentContainer'
 import Button from '../components/Button'
@@ -43,14 +40,6 @@ const FeatureQuad = styled.div`
   @media (max-width: 500px) {
     border-width: 0!important;
   }
-`
-
-const ImageWrapper = styled.figure`
-  max-width: 100%;
-  min-width: 0;
-  flex: 1 1 auto;
-  border: 5px solid white;
-  margin-right: 10px;
 `
 
 class ServiceTeaser extends React.Component {
@@ -123,7 +112,7 @@ class ServiceTeaser extends React.Component {
               <div 
                 css={{
                   alignSelf: 'center',
-                  margin: '2rem 0 5rem 0',
+                  margin: '2rem 0',
                 }}>
 
                 <Button 
@@ -131,43 +120,10 @@ class ServiceTeaser extends React.Component {
                   caption='Mehr erfahren'>
                 </Button>
               </div>
-
-              <div 
-                css={{
-                  width: '100%',
-                  display: 'flex',
-                  flexDirection: 'row',
-                  flexWrap: 'nowrap',
-                  alignItems: 'center',
-                  marginTop: '2rem',
-                  marginBottom: '-12rem',
-                }}>
-
-                <ImageWrapper>
-                  <img src={kidBallPitImg} alt="child in ball pit"/>
-                </ImageWrapper>
-
-                <ImageWrapper>
-                  <img src={kidPaintingImg} alt="child painting"/>
-                </ImageWrapper>
-
-                <ImageWrapper>
-                  <img src={kidCarsImg} alt="child playing with cars"/>
-                </ImageWrapper>
-
-              </div>
             </div>
             
           </SectionContainer>
         </BackgroundContentContainer>
-
-        <div
-          css={{
-            minHeight: '7rem',
-            width: '100%',
-            background: 'white',
-          }}>
-        </div>
       </div>
     )
   }
