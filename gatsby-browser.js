@@ -11,8 +11,6 @@ function scrollTo (element, to, duration) {
 	  var diff = elementY - startingY;
 	  var start;
 
-	  console.log('diff: ' + diff);
-
 	  window.requestAnimationFrame(function step(timestamp) {
 	    if (!start)
 	    	start = timestamp;
@@ -24,8 +22,6 @@ function scrollTo (element, to, duration) {
 
 	    document.documentElement.scrollTop = verticalScrollPosition;
 	    document.body.scrollTop = verticalScrollPosition;
-
-	    console.log(window.pageYOffset || document.documentElement.scrollTop);
 
 	    if (time < duration) {
 	      window.requestAnimationFrame(step)

@@ -6,7 +6,7 @@ import NavBar from '../components/NavBar'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import strings from '../../data/strings'
-import headerImg from '../img/banner-crayons.jpg'
+import headerImg from '../img/banner-phone.jpg'
 
 const ContactPage = () =>
   <div>

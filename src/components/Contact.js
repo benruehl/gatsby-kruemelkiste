@@ -30,8 +30,8 @@ class Contact extends React.Component {
               alignItems: 'left',
             }}>
 
-            <h1>Sprechen Sie mich an</h1>
-            <p>Bei Fragen oder Anregungen können Sie mich gern über das Formular kontaktieren. Ich werde mich dann bei Ihnen melden. Alternativ können Sie mich auch telefonisch erreichen. Innerhalb der Woche ist das am besten zur Mittagszeit möglich.</p>
+            <h1>Habe ich Ihr Interesse geweckt?</h1>
+            <p>Bei Fragen oder Anregungen können Sie mich gern über das Formular kontaktieren. Ich werde mich dann sobald wie möglich bei Ihnen melden. Alternativ können Sie mich auch telefonisch erreichen. Innerhalb der Woche ist das am besten zur Mittagszeit möglich.</p>
 
             <div
               css={{

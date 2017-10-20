@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom';
 import styled from 'styled-components'
 
 import Button from '../components/Button'
@@ -10,7 +11,7 @@ const InputGroup = styled.div`
   width: 100%;
   margin-bottom: 1.5em;
 
-  input {
+  input, textarea {
     flex: 1 1 auto;
     margin-left: 1em;
     border: 0 solid transparent;
@@ -25,48 +26,132 @@ const InputGroup = styled.div`
       outline: none;
     }
   }
+
+  label {
+    text-align: right;
+    flex-basis: 4.6em;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: stretch;
+
+    input, textarea {
+      margin-left: 0;
+    }
+
+    label {
+      text-align: left;
+      flex-basis: auto;
+    }
+  }
 `
 
+const mailAddress = 'assassin0@arcor.de'
+
 class Contact extends React.Component {
+
+  submit() {
+    var formData = {
+      name: ReactDOM.findDOMNode(this.refs.nameInput).value,
+      mail: ReactDOM.findDOMNode(this.refs.mailInput).value,
+      message: ReactDOM.findDOMNode(this.refs.messageInput).value,
+    }
+
+    if (formData.message != '' && formData.message.trim() == '') {
+      return false;
+    }
+
+    this.submitElement.click()
+  }
+
   render() {
     return (
-      <div
-        css={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-        }}>
+      <form
+        action={'https://formspree.io/' + mailAddress}
+        method="POST">
 
-        <InputGroup>
-          <label htmlFor='nameInput'>
-            Name
-          </label>
-          <input 
-            className='materialCard1'
-            type='text'
-            id='nameInput'
-            ref='nameInput'/>
-        </InputGroup>
-        
-        <InputGroup>
-          <label htmlFor='mailInput'>
-            Email
-          </label>
-          <input 
-            className='materialCard1'
-            type='text'
-            id='mailInput'
-            ref='mailInput'/>
-        </InputGroup>
+        <input type="hidden" name="_language" value="de" />
+        <input type="hidden" name="_subject" value="Interesse an der Krümelkiste" />
+        <input type="hidden" name="_next" value="//steffis-kruemelkiste.netlify.com/contact-success" />
 
         <div
           css={{
-
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}>
 
-          <Button caption='Abschicken'/>
+          <InputGroup>
+            <label htmlFor='nameInput'>
+              Name
+            </label>
+            <input 
+              className='materialCard1'
+              type='text'
+              id='nameInput'
+              name='name'
+              ref='nameInput'/>
+          </InputGroup>
+          
+          <InputGroup>
+            <label htmlFor='mailInput'>
+              E-Mail
+            </label>
+            <input 
+              className='materialCard1'
+              type='email'
+              id='mailInput'
+              name='_replyto'
+              ref='mailInput'/>
+          </InputGroup>
+
+          <InputGroup>
+            <label 
+              htmlFor='messageInput' 
+              css={{
+                alignSelf: 'flex-start',
+                marginTop: '.5em',
+              }}>
+              Nachricht
+            </label>
+            <textarea 
+              className='materialCard1'
+              type='text'
+              id='messageInput'
+              name='message'
+              ref='messageInput'
+              rows='5'
+              maxlength='1000'
+              required/>
+          </InputGroup>
+
+          <p
+            css={{
+              color: '#a0a0a0',
+              textAlign: 'justify',
+              marginTop: '1em',
+            }}>
+            Beim Abschicken werden Sie zum Schutz vor Spam kurzzeitig an den externen Dienst Formspree weitergeleitet. Danach kehren Sie automatisch hierher zurück. Die eingegebenen Daten werden von mir nicht an Dritte weitergegeben.
+          </p>
+
+          <div
+            css={{
+              marginTop: '2em',
+            }}>
+
+            <input 
+              type='submit'
+              ref={input => this.submitElement = input} 
+              value='Abschicken'
+              style={{ display: 'none' }}/>
+
+            <Button 
+              caption='Abschicken'
+              onClick={this.submit.bind(this)}/>
+          </div>
         </div>
-      </div>
+      </form>
     )
   }
 }
