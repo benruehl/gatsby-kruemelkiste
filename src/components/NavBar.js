@@ -29,17 +29,19 @@ const NavBarLink = styled(Link)`
 
 class NavBar extends React.Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
-      scrollOpacity: 0,
-      scrollDisplay: 'none',
+      scrollOpacity: this.props.stayOpen ? 1 : 0,
+      scrollDisplay: this.props.stayOpen ? 'block' : 'none',
     };
     this.handleScroll = this.handleScroll.bind(this)
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll, {passive: true});
+    if (!this.props.stayOpen) {
+      window.addEventListener('scroll', this.handleScroll, {passive: true});
+    }
   }
 
   componentWillUnmount() {
