@@ -19,8 +19,8 @@ class SectionContainer extends React.Component {
             maxWidth: contentWidth,
             display: 'inline-block',
             textAlign: 'left',
-            paddingTop: '2rem',
-            paddingBottom: '2rem',
+            paddingTop: '3rem',
+            paddingBottom: '3rem',
             width: '100%',
           }}>
 

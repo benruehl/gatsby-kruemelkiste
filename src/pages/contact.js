@@ -10,7 +10,7 @@ import headerImg from '../img/banner-phone.jpg'
 
 const ContactPage = () =>
   <div>
-    <Header caption={strings.contactCaption} backgroundImage={headerImg} gradientTopLeft='#ae7e66' gradientBottomRight='#8bbfdd'/>
+    <Header caption={strings.contactCaption} backgroundImage={headerImg} gradientTopLeft='#9b7d85' gradientBottomRight='#4c58ac'/>
     <NavBar stayOpen={true}/>
     <Contact/>
     <Footer/>

@@ -38,8 +38,8 @@ class LogoExplanation extends React.Component {
 
                 <div
                   css={{
-                    width: '20em',
-                    height: '20em',
+                    minWidth: '20em',
+                    minHeight: '20em',
                     position: 'relative',
                   }}>
 

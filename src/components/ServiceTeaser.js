@@ -25,7 +25,7 @@ const FeatureRow = styled.div`
 `
 
 const FeatureQuad = styled.div`
-  flex: 1 1 0;
+  flex: 1;
   padding: calc(1rem + 1vw) 2vw;
 
   &:not(:last-child) {

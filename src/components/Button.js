@@ -43,6 +43,8 @@ class Button extends React.Component {
           border: '3px solid ' + primaryColor,
           borderRadius: '2px',
           padding: '0.5em 2em',
+          userSelect: 'none',
+          cursor: 'default',
           WebkitTransition: '0.25s',
           transition: '0.25s',
 

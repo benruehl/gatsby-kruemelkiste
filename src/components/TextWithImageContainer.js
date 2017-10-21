@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ImageWrapper = styled.div`
-  flex: 1 1 0;
+  flex: 1;
   align-self: center;
   border: 4px solid white;
   padding: 4px;
@@ -79,7 +79,7 @@ class TextWithImageContainer extends React.Component {
 
         <div
           css={{
-            flex: '2 2 0',
+            flex: '2',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
