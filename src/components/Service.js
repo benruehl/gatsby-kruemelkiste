@@ -10,23 +10,79 @@ import {contentWidth} from '../styles/dimens'
 import strings from '../../data/strings'
 import cartImg from '../img/in-cart.jpg'
 import kidWithCarsImg from '../img/kid-cars.jpg'
+import abstractRingsImg from '../img/abstract-rings.svg'
+import babyIcon from '../img/icon-baby.svg'
+import timeIcon from '../img/icon-time.svg'
+import noSmokingIcon from '../img/icon-no-smoking.svg'
+
+const FeatureContainer = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2em 1em 0 1em;
+  margin: 1em;
+`
+
+const IconContainer = styled.div`
+  min-width: 10em;
+  min-height: 10em;
+  width: 10em;
+  height: 10em;
+  background-size: contain;
+  margin-bottom: 2em;
+`
 
 class Service extends React.Component {
   render() {
     return (
-      <BackgroundContentContainer background='white'>
+      <BackgroundContentContainer background='#fcf0f0'>
 
         <div
           css={{
             width: '100%',
-            textAlign: 'center',
+            height: '100%',
+            opacity: '0.15',
+            background: 'url(' + abstractRingsImg + ') top center no-repeat',
+            backgroundSize: 'contain',
           }}>
         </div>
 
         <div>
-
           <SectionContainer>
-            <h1>Individuelle und liebevolle Betreuung</h1>
+
+            <h1
+              css={{
+                textAlign: 'center'
+              }}>
+              Individuelle und liebevolle Betreuung
+            </h1>
+
+            <div
+              css={{
+                display: 'flex',
+                flexDirection: 'row',
+                width: '100%',
+                marginTop: '4em',
+                marginBottom: '4em',
+              }}>
+
+              <FeatureContainer className='materialCard1'>
+                <IconContainer css={{ background: 'url(' + babyIcon + ')' }}/>
+                <p>Tageskinder im Alter bis zu 3 Jahren werden von mir betreut</p>
+              </FeatureContainer>
+
+              <FeatureContainer className='materialCard1'>
+                <IconContainer css={{ background: 'url(' + timeIcon + ')' }}/>
+                <p>Betreuungszeiten von Montag bis Freitag von je 8 bis 16 Uhr</p>
+              </FeatureContainer>
+
+              <FeatureContainer className='materialCard1'>
+                <IconContainer css={{ background: 'url(' + noSmokingIcon + ')' }}/>
+                <p>Wir sind ein Nichtraucherhaushalt</p>
+              </FeatureContainer>
+            </div>
           </SectionContainer>
 
           <div
@@ -38,7 +94,6 @@ class Service extends React.Component {
             }}>
             <SectionContainer>
               <TextWithImageContainer image={kidWithCarsImg} imagePosition='left'>
-                <p>Tageskinder im Alter bis zu 3 Jahren werden von mir liebevoll und individuell betreut. Wir sind ein Nichtraucherhaushalt.</p>
                 <span>Wir haben ein kindgerechtes, farbenfrohes Spielzimmer mit einem Kletterhäuschen, Tobe- und Kuschelmatratze und vielen Bewegungselementen. Spannende Spielelemente, wie die große Holzeisenbahn, die Murmelbahn, jede Menge Bausteine, Autos, Bücher, Spiele, Handpuppen, einfache Musikinstrumente u.s.w. wecken die kreative Neugier der Kinder.</span>
               </TextWithImageContainer>
             </SectionContainer>
@@ -64,21 +119,6 @@ class Service extends React.Component {
 
           <SectionContainer>
             <p>Die  Kinder erlernen die tägliche Hygiene, wie das Händewaschen, Töpfchen- oder Toilettengang und das Zähneputzen. Die Selbständigkeit wird dabei altersgerecht gefördert, genauso wie ein faires und freundliches Miteinander in der Gruppe.</p>
-
-            <div
-              css={{
-                textAlign: 'center',
-              }}>
-
-              <p
-                css={{
-                  background: '#f0f0f0',
-                  borderTop: '4px solid #d0d0d0',
-                  padding: '0.5em',
-                }}>
-                <b>Betreuungszeiten:</b> Montag - Freitag / 8.00 - 16.30 Uhr
-              </p>
-            </div>
           </SectionContainer>
         </div>
       </BackgroundContentContainer>

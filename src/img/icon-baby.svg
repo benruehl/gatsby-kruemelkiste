@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="256px" height="256px" viewBox="0 0 256 256" xml:space="preserve">
+	<g id="Age">
+		<circle fill="#F9CDD2" cx="128" cy="128" r="128"/>
+		<g>
+			<path fill="#FAD1CA" stroke="#B57B82" stroke-width="10" stroke-miterlimit="10" d="M58.612,132.361
+				c-21.907,0-22.395,30.716,2.331,30.716"/>
+			<path fill="#FAD1CA" stroke="#B57B82" stroke-width="10" stroke-miterlimit="10" d="M201.389,132.361
+				c21.905,0,22.394,30.716-2.33,30.716"/>
+			<path fill="none" stroke="#B57B82" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M132.218,69.725
+				c0,0,3.908-24.857,25.658-23.838"/>
+			<path fill="none" stroke="#B57B82" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M99.116,54.006
+				c17.44-2.439,25.03,15.746,25.03,15.746"/>
+			<path fill="none" stroke="#B57B82" stroke-width="12" stroke-miterlimit="10" d="M199.656,145.14
+				c0,39.726-31.155,65.354-69.582,65.354c-38.429,0-69.582-25.628-69.582-65.354c0-39.729,31.152-71.936,69.582-71.936
+				C168.501,73.204,199.656,105.411,199.656,145.14z"/>
+		</g>
+		<path fill="#FAD1CA" stroke="#DD918E" stroke-width="10" stroke-miterlimit="10" d="M55.612,128.361
+			c-21.907,0-22.395,30.716,2.331,30.716"/>
+		<path fill="#FAD1CA" stroke="#DD918E" stroke-width="10" stroke-miterlimit="10" d="M198.389,128.361
+			c21.905,0,22.394,30.716-2.33,30.716"/>
+		<path fill="#FAD2CA" stroke="#DD918E" stroke-width="12" stroke-miterlimit="10" d="M196.656,140.14
+			c0,39.726-31.155,65.354-69.582,65.354c-38.429,0-69.582-25.628-69.582-65.354c0-39.729,31.152-71.936,69.582-71.936
+			C165.501,68.204,196.656,100.411,196.656,140.14z"/>
+		<path fill="none" stroke="#DD928D" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M129.218,65.725
+			c0,0,3.908-24.857,25.658-23.838"/>
+		<path fill="none" stroke="#DD928D" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M96.116,50.006
+			c17.44-2.439,25.03,15.746,25.03,15.746"/>
+		<path fill="none" stroke="#DD928D" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M127.074,180.803
+			c14.056,0,22.715-6.338,26.324-11.7"/>
+		<circle fill="#DD928D" cx="97.134" cy="134.491" r="11.185"/>
+		<circle fill="#DD928D" cx="157.015" cy="134.491" r="11.186"/>
+		<path fill="none" stroke="#DD928D" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M127.074,180.803
+			c-14.056,0-22.715-6.338-26.324-11.7"/>
+	</g>
+</svg>
