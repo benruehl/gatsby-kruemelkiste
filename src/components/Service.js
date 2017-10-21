@@ -22,14 +22,18 @@ const FeatureContainer = styled.div`
   align-items: center;
   text-align: center;
   padding: 2em 1em 0 1em;
-  margin: 1em;
+  margin: 1vw;
+
+  p {
+    max-width: 100%;
+  }
 `
 
 const IconContainer = styled.div`
-  min-width: 10em;
-  min-height: 10em;
-  width: 10em;
-  height: 10em;
+  min-width: 7.5em;
+  min-height: 7.5em;
+  width: 10vw;
+  height: 10vw;
   background-size: contain;
   margin-bottom: 2em;
 `
@@ -66,6 +70,10 @@ class Service extends React.Component {
                 width: '100%',
                 marginTop: '4em',
                 marginBottom: '4em',
+
+                '@media (max-width: 650px)': {
+                  flexDirection: 'column',
+                }
               }}>
 
               <FeatureContainer className='materialCard1'>
