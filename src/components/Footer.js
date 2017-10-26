@@ -75,7 +75,7 @@ const Footer = () =>
 				<Group>
 					<GroupHeader>Kontakt</GroupHeader>
 					<GroupItem>Tel.: 030 / 92 40 94 42</GroupItem>
-					<GroupItem>steffis-kruemelkiste@gmail.com</GroupItem>
+					<GroupItem>{strings.emailAddress}</GroupItem>
 				</Group>
 			</div>
 		</SectionContainer>

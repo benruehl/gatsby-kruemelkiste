@@ -8,4 +8,6 @@ module.exports = {
   contactCaption: "Kontakt",
   serviceCaption: "Mein Angebot",
   siteNoticeCaption: "Impressum & Datenschutz",
+
+  emailAddress: "steffis.kruemelkiste@gmail.com",
 }

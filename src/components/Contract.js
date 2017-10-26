@@ -100,19 +100,26 @@ class Contract extends React.Component {
 
                 <ColumnBody>
                   <div css={{ display: 'flex' }}>
-                    <div>Montag, Dienstag, Freitag:</div>
+                    <div>Montag:</div>
                     <div style={{ flex: '1 1 auto', marginLeft: '1rem', textAlign: 'right', }}>9 – 12 Uhr</div>
                   </div>
-                  <br/>
+                  <div css={{ display: 'flex' }}>
+                    <div>Dienstag:</div>
+                    <div style={{ flex: '1 1 auto', marginLeft: '1rem', textAlign: 'right', }}>9 – 12 u. 13 – 14.30 Uhr</div>
+                  </div>
                   <div css={{ display: 'flex' }}>
                     <div>Donnerstag:</div>
-                    <div style={{ flex: '1 1 auto', marginLeft: '1rem', textAlign: 'right', }}>14 – 18 Uhr</div>
+                    <div style={{ flex: '1 1 auto', marginLeft: '1rem', textAlign: 'right', }}>13 – 18 Uhr</div>
+                  </div>
+                  <div css={{ display: 'flex' }}>
+                    <div>Freitag:</div>
+                    <div style={{ flex: '1 1 auto', marginLeft: '1rem', textAlign: 'right', }}>9 – 12 Uhr</div>
                   </div>
                 </ColumnBody>
               </TableColumn>
             </div>
 
-            <p>Vereinbart am besten einen Termin über <a href='https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=1&dienstleister=324903&anliegen%5B%5D=324873&herkunft=http%3A%2F%2Fservice.berlin.de%2Fdienstleistung%2F324873%2F'>die Website des Jugendamts Pankow</a> oder telefonisch unter 9 02 95 56 71 während der Öffnungszeiten.</p>
+            <p>Vereinbart am besten einen Termin über <a href='https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=1&dienstleister=324903&anliegen%5B%5D=324873&herkunft=http%3A%2F%2Fservice.berlin.de%2Fdienstleistung%2F324873%2F'>die Website des Jugendamts Pankow</a> oder telefonisch unter 030 90295-0 während der Öffnungszeiten.</p>
             <p>Die Kosten der Kinderbetreuung sind einkommensabhängig und bei Kita und Tagespflege gleich.</p>
           
           </div>
