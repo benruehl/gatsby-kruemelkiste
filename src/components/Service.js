@@ -10,6 +10,7 @@ import {contentWidth} from '../styles/dimens'
 import strings from '../../data/strings'
 import cartImg from '../img/in-cart.jpg'
 import kidWithCarsImg from '../img/kid-cars.jpg'
+import indoorBlurImg from '../img/indoor-blur.jpg'
 import abstractRingsImg from '../img/abstract-rings.svg'
 import babyIcon from '../img/icon-baby.svg'
 import timeIcon from '../img/icon-time.svg'
@@ -100,11 +101,22 @@ class Service extends React.Component {
               background: '-webkit-linear-gradient(30deg, #FFE7E0 35%, #FFF7F5 35%)',
               background: 'linear-gradient(-300deg, #FFE7E0 35%, #FFF7F5 35%)',
             }}>
-            <SectionContainer>
-              <TextWithImageContainer image={kidWithCarsImg} imagePosition='left'>
-                <span>Wir haben ein kindgerechtes, farbenfrohes Spielzimmer mit einem Kletterhäuschen, Tobe- und Kuschelmatratze und vielen Bewegungselementen. Spannende Spielelemente, wie die große Holzeisenbahn, die Murmelbahn, jede Menge Bausteine, Autos, Bücher, Spiele, Handpuppen, einfache Musikinstrumente u.s.w. wecken die kreative Neugier der Kinder.</span>
-              </TextWithImageContainer>
-            </SectionContainer>
+            <BackgroundContentContainer background='white'>
+              <div
+                css={{
+                  width: '100%',
+                  height: '100%',
+                  background: 'url(' + indoorBlurImg + ') center center no-repeat',
+                  backgroundSize: 'cover',
+                  opacity: 0.5,
+                }}/>
+
+              <SectionContainer>
+                <TextWithImageContainer image={kidWithCarsImg} imagePosition='left'>
+                  <span>Wir haben ein kindgerechtes, farbenfrohes Spielzimmer mit einem Kletterhäuschen, Tobe- und Kuschelmatratze und vielen Bewegungselementen. Spannende Spielelemente, wie die große Holzeisenbahn, die Murmelbahn, jede Menge Bausteine, Autos, Bücher, Spiele, Handpuppen, einfache Musikinstrumente u.s.w. wecken die kreative Neugier der Kinder.</span>
+                </TextWithImageContainer>
+              </SectionContainer>
+            </BackgroundContentContainer>
           </div>
 
           <SectionContainer>
