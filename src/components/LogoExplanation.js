@@ -6,6 +6,11 @@ import BackgroundContentContainer from '../components/BackgroundContentContainer
 import logoImg from '../img/logo.svg'
 import wallpaperImg from '../img/wallpaper.svg'
 
+const logoSize = 18
+const logoPadding = 3
+const textPaddingLeft = 2
+const textPaddingRight = 1
+
 class LogoExplanation extends React.Component {
   render() {
     return (
@@ -38,8 +43,8 @@ class LogoExplanation extends React.Component {
 
                 <div
                   css={{
-                    minWidth: '20em',
-                    minHeight: '20em',
+                    minWidth: logoSize + 'em',
+                    minHeight: logoSize + 'em',
                     position: 'relative',
                   }}>
 
@@ -75,7 +80,7 @@ class LogoExplanation extends React.Component {
                       right: '0',
                       left: '0',
                       bottom: '0',
-                      margin: '3em',
+                      margin: logoPadding + 'em',
                       background: 'url(' + logoImg + ') center center no-repeat',
                       backgroundSize: 'contain',
                     }}>
@@ -86,21 +91,21 @@ class LogoExplanation extends React.Component {
                   className='materialCard1'
                   css={{
                     flex: '1 1 0',
-                    marginLeft: '-10em', //50% of circle width
-                    paddingLeft: '12em', //negative margin plus additional padding
-                    paddingRight: '1em',
+                    marginLeft: '-' + logoSize / 2 + 'em', //50% of circle width
+                    paddingLeft: logoSize / 2 + textPaddingLeft + 'em', //negative margin plus additional padding
+                    paddingRight: textPaddingRight + 'em',
 
                     '@media (max-width: 800px)': {
                       marginLeft: '0',
                       paddingLeft: '1em',
-                      marginTop: '-6em',
-                      paddingTop: '6em',
+                      marginTop: '-' + logoSize / 4 + 'em',
+                      paddingTop: logoSize / 4 + 'em',
                     }
                   }}>
 
-                  <h2>Ein Begleiter für die Kinder</h2>
-                  <p>Unser kleiner Tiger ist ein pädagogisches Symbol, das ich hin und wieder gerne bei der Betreuung einsetze. Beim Toben auf der Kuschelmatratze werden die Kinder ermuntert, wie die Tiger herumzuspringen. Auch beim Zähneputzen lässt sich Motivation erzeugen, wenn alle Kinder wie Tiger die Mäuler aufreißen sollen.</p>
-                  <p>Der Tiger hat sich auf diese Weise inzwischen als Logo der Krümelkiste etabliert. 😊</p>
+                  <h2>Hallo Kinder, wisst ihr schon wer ich bin?</h2>
+                  <p>Ich heiße Krümel und begleite euch durch den Tag. Stets bin ich an eurer Seite, lache, tobe und spiele mit euch. Und sollte es doch einmal nötig sein: Ich kann auch ganz toll trösten.</p>
+                  <p>Also bis bald in der Krümelkiste. Ich freue mich auf euch! 🐯</p>
                 </div>
               
               </div>

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import styled from 'styled-components'
 
 import Button from '../components/Button'
+import strings from '../../data/strings'
 
 const InputGroup = styled.div`
   display: flex;
@@ -47,8 +48,6 @@ const InputGroup = styled.div`
   }
 `
 
-const mailAddress = 'assassin0@arcor.de'
-
 class Contact extends React.Component {
 
   submit() {
@@ -68,7 +67,7 @@ class Contact extends React.Component {
   render() {
     return (
       <form
-        action={'https://formspree.io/' + mailAddress}
+        action={'https://formspree.io/' + strings.emailAddress}
         method="POST">
 
         <input type="hidden" name="_language" value="de" />

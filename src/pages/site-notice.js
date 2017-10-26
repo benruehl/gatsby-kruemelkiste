@@ -9,7 +9,7 @@ const SecondPage = () =>
     <SectionContainer>
       <h1>Impressum</h1> <h2>Angaben gem&auml;&szlig; &sect; 5 TMG:</h2> <p>Steffi R&uuml;hl<br />
       Gounodstra&szlig;e, 101<br /> 13088 Berlin</p> <h2>Kontakt:</h2> <p>Telefon: 03092409442<br /> EMail:
-      steffis-kruemelkiste@gmail.com</p> <h2>Aufsichtsbeh&ouml;rde:</h2> <p>Jugendamt</p> <p>Wir
+      steffis.kruemelkiste@gmail.com</p> <h2>Aufsichtsbeh&ouml;rde:</h2> <p>Jugendamt</p> <p>Wir
       sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
       teilzunehmen.</p> <h2>Haftung f&uuml;r Inhalte</h2> <p>Als Diensteanbieter sind wir gem&auml;&szlig;
       &sect; 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
