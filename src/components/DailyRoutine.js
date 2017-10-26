@@ -57,107 +57,113 @@ class DailyRoutine extends React.Component {
         <div
           css={{
             width: '100%',
-            textAlign: 'center',
+            height: '100%',
+            background: 'repeating-linear-gradient(45deg, #FFF7F5, #FFF7F5 10px, #FFF2EF 10px, #FFF2EF 20px)',
           }}>
         </div>
 
         <SectionContainer>
 
-          <div
-            css={{
-            }}>
+          <div>
 
             <h1>Tagesablauf</h1>
 
-            <div
-              className='primaryBackground'
+            <div 
+              className='materialCard1'
               css={{
-                display: 'flex',
-                flexDirection: 'column',
-                paddingLeft: '8px',
+                padding: '.5em',
                 marginBottom: '2em',
               }}>
 
-              <DailyItem>
-                <ItemTime>8.00 - 9.30	Uhr</ItemTime>
-                <ItemActivity>
-                  Begrüßung der Kinder
-                  <ActivityDescription>
-                    Aufgreifen von Themen und Dingen, die die Kinder mitbringen und bewegen;<br/>
-                    Kleine Beschäftigungen wie Singspiele, Lesen, Malen, Puzzlen, Bauen mit Bausteinen, Basteln, Toben etc.
-                  </ActivityDescription>
-                </ItemActivity>
-              </DailyItem>
-              <DailyItem>
-                <ItemTime>9.30 - 9.45	Uhr</ItemTime>
-                <ItemActivity>
-                  Obstfrühstück
-                  <ActivityDescription>
-                    Bei sehr schönem Wetter gibt's manchmal auch Obstpicknicks draußen.
-                  </ActivityDescription>
-                </ItemActivity>
-              </DailyItem>
-              <DailyItem>
-                <ItemTime>ab 10.00	Uhr</ItemTime>
-                <ItemActivity>
-                  Wir sind draußen
-                  <ActivityDescription>
-                    Spielplatz, Natur beobachten, Pfützen patschen, Laub fegen usw.
-                  </ActivityDescription>
-                </ItemActivity>
-              </DailyItem>
-              <DailyItem>
-                <ItemTime>11.15 - 11.30	Uhr</ItemTime>
-                <ItemActivity>
-                  Mittagessen
-                  <ActivityDescription>
-                    selbstgekocht & lecker ...
-                  </ActivityDescription>
-                </ItemActivity>
-              </DailyItem>
-              <DailyItem>
-                <ItemTime>11.30 - 12.00	Uhr</ItemTime>
-                <ItemActivity>
-                  Vorbereitung auf die Mittagsruhe
-                  <ActivityDescription>
-                    Hygiene, Anziehen der Schlafsäckchen, Bettgeschichte ...
-                  </ActivityDescription>
-                </ItemActivity>
-              </DailyItem>
-              <DailyItem>
-                <ItemTime>12.00 - 13.30	Uhr</ItemTime>
-                <ItemActivity>Mittagsruhe</ItemActivity>
-              </DailyItem>
-              <DailyItem>
-                <ItemTime>13.30 - 14.30	Uhr</ItemTime>
-                <ItemActivity>Individuelles Erwachen, freies Spiel</ItemActivity>
-              </DailyItem>
-              <DailyItem>
-                <ItemTime>14.30 - 15.00	Uhr</ItemTime>
-                <ItemActivity>Freies Spiel, Singspiele, Buch lesen, Toben o.ä.</ItemActivity>
-              </DailyItem>
-              <DailyItem>
-                <ItemTime>15.00 - 15.15	Uhr</ItemTime>
-                <ItemActivity>
-                  Vesper
-                  <ActivityDescription>
-                    Im Sommer vespern wir gelegentlich draußen.
-                  </ActivityDescription>
-                </ItemActivity>
-              </DailyItem>
-              <DailyItem>
-                <ItemTime>15.15 - 15.45	Uhr</ItemTime>
-                <ItemActivity>Kleine Beschäftigungen am Tisch oder freies Spiel</ItemActivity>
-              </DailyItem>
-              <DailyItem>
-                <ItemTime>15.45 - 16.30	Uhr</ItemTime>
-                <ItemActivity>
-                  Wir sind auf dem Spielplatz im Hof
-                  <ActivityDescription>
-                    Bei schlechtem Wetter oder im Winter spielen wir drinnen.
-                  </ActivityDescription>
-                </ItemActivity>
-              </DailyItem>
+              <div
+                className='primaryBackground'
+                css={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  paddingLeft: '8px',
+                }}>
+
+                <DailyItem>
+                  <ItemTime>8.00 - 9.30	Uhr</ItemTime>
+                  <ItemActivity>
+                    Begrüßung der Kinder
+                    <ActivityDescription>
+                      Aufgreifen von Themen und Dingen, die die Kinder mitbringen und bewegen;<br/>
+                      Kleine Beschäftigungen wie Singspiele, Lesen, Malen, Puzzlen, Bauen mit Bausteinen, Basteln, Toben etc.
+                    </ActivityDescription>
+                  </ItemActivity>
+                </DailyItem>
+                <DailyItem>
+                  <ItemTime>9.30 - 9.45	Uhr</ItemTime>
+                  <ItemActivity>
+                    Obstfrühstück
+                    <ActivityDescription>
+                      Bei sehr schönem Wetter gibt's manchmal auch Obstpicknicks draußen.
+                    </ActivityDescription>
+                  </ItemActivity>
+                </DailyItem>
+                <DailyItem>
+                  <ItemTime>ab 10.00	Uhr</ItemTime>
+                  <ItemActivity>
+                    Wir sind draußen
+                    <ActivityDescription>
+                      Spielplatz, Natur beobachten, Pfützen patschen, Laub fegen usw.
+                    </ActivityDescription>
+                  </ItemActivity>
+                </DailyItem>
+                <DailyItem>
+                  <ItemTime>11.15 - 11.30	Uhr</ItemTime>
+                  <ItemActivity>
+                    Mittagessen
+                    <ActivityDescription>
+                      selbstgekocht & lecker ...
+                    </ActivityDescription>
+                  </ItemActivity>
+                </DailyItem>
+                <DailyItem>
+                  <ItemTime>11.30 - 12.00	Uhr</ItemTime>
+                  <ItemActivity>
+                    Vorbereitung auf die Mittagsruhe
+                    <ActivityDescription>
+                      Hygiene, Anziehen der Schlafsäckchen, Bettgeschichte ...
+                    </ActivityDescription>
+                  </ItemActivity>
+                </DailyItem>
+                <DailyItem>
+                  <ItemTime>12.00 - 13.30	Uhr</ItemTime>
+                  <ItemActivity>Mittagsruhe</ItemActivity>
+                </DailyItem>
+                <DailyItem>
+                  <ItemTime>13.30 - 14.30	Uhr</ItemTime>
+                  <ItemActivity>Individuelles Erwachen, freies Spiel</ItemActivity>
+                </DailyItem>
+                <DailyItem>
+                  <ItemTime>14.30 - 15.00	Uhr</ItemTime>
+                  <ItemActivity>Freies Spiel, Singspiele, Buch lesen, Toben o.ä.</ItemActivity>
+                </DailyItem>
+                <DailyItem>
+                  <ItemTime>15.00 - 15.15	Uhr</ItemTime>
+                  <ItemActivity>
+                    Vesper
+                    <ActivityDescription>
+                      Im Sommer vespern wir gelegentlich draußen.
+                    </ActivityDescription>
+                  </ItemActivity>
+                </DailyItem>
+                <DailyItem>
+                  <ItemTime>15.15 - 15.45	Uhr</ItemTime>
+                  <ItemActivity>Kleine Beschäftigungen am Tisch oder freies Spiel</ItemActivity>
+                </DailyItem>
+                <DailyItem>
+                  <ItemTime>15.45 - 16.30	Uhr</ItemTime>
+                  <ItemActivity>
+                    Wir sind auf dem Spielplatz im Hof
+                    <ActivityDescription>
+                      Bei schlechtem Wetter oder im Winter spielen wir drinnen.
+                    </ActivityDescription>
+                  </ItemActivity>
+                </DailyItem>
+              </div>
             </div>
 
             <p>Der Tagesablauf versteht sich als Rahmen. Die Zeiten können je nach Alter der Kinder, nach Jahreszeit und Wettersituation variieren.</p>
