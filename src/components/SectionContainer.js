@@ -7,7 +7,11 @@ class SectionContainer extends React.Component {
   render(children) {
     return (
       <div
+        className={this.props.className}
         css={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
           textAlign: 'center',
           background: this.props.background,
           paddingLeft: '2vw',
