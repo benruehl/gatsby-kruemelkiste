@@ -94,7 +94,7 @@ class Service extends React.Component {
 
                 <FeatureContainer className='materialCard1'>
                   <IconContainer css={{ background: 'url(' + timeIcon + ')' }}/>
-                  <p>Betreuungszeiten von Montag bis Freitag von je 8 bis 16 Uhr</p>
+                  <p>Betreuungszeiten von Montag bis Freitag von je 8 bis 16.30 Uhr</p>
                 </FeatureContainer>
 
                 <FeatureContainer className='materialCard1'>
@@ -117,7 +117,7 @@ class Service extends React.Component {
 
             <SectionContainer>
               <TextWithImageContainer image={indoorImg} imagePosition='left'>
-                <h2>Für Spielzeug ist gesorgt</h2>
+                <h2>Ein Umfangreicher Spieleschatz</h2>
                 <p>Wir haben ein kindgerechtes, farbenfrohes Spielzimmer mit einem Kletterhäuschen, Tobe- und Kuschelmatratze und vielen Bewegungselementen. Spannende Spielelemente, wie die große Holzeisenbahn, die Murmelbahn, jede Menge Bausteine, Autos, Bücher, Spiele, Handpuppen, einfache Musikinstrumente u.s.w. wecken die kreative Neugier der Kinder.</p>
               </TextWithImageContainer>
             </SectionContainer>
@@ -131,7 +131,7 @@ class Service extends React.Component {
               }}>
 
               <h2>Betreuung je nach individueller Situation</h2>
-              <p>Grundlage für meine Arbeit ist die situationsbezogene Pädagogik, d.h. ich greife Themen, Ideen und Anregungen auf, die die Kinder in die Tagespflege mitbringen, und entwickle sie gemeinsam mit den Kindern weiter. Jedes Kind wird entsprechend seines Alters und seines Entwicklungsstandes individuell gefördert.</p>
+              <p>Grundlage für meine Arbeit ist die situationsbezogene Pädagogik, d.h. ich greife Themen, Ideen und Anregungen auf, die die Kinder in die Tagespflege mitbringen, und entwickle sie gemeinsam mit den Kindern weiter. Ergänzend biete ich den Kindern kleine Projekte an. Es wird gemalt, geknetet, gebastelt – häufig in Bezug auf die Jahreszeiten und deren typische Besonderheiten. Jedes Kind wird entsprechend seines Alters und seines Entwicklungsstandes individuell gefördert.</p>
             </div>
           </SectionContainer>
 
@@ -147,7 +147,7 @@ class Service extends React.Component {
             <SectionContainer>
               <TextWithImageContainer image={cartImg} imagePosition='right'>
                 <h2>Jede Menge frische Luft</h2>
-                <p>Täglich sind wir an der frischen Luft, beobachten die Natur in ihrer Vielfältigkeit und besuchen die Spielplätze in der Umgebung. Bewegung wird bei uns "groß" geschrieben. Wir singen viel und machen erste, frühe Erfahrungen mit Musik- und Klanginstrumenten. Es wird  gemalt, geknetet, gebastelt – häufig in Bezug auf die Jahreszeiten und deren typische Besonderheiten. Kinderbücher, Fingerspiele und Verse spielen für die Förderung der Sprache eine große Rolle.</p>
+                <p>Täglich sind wir an der frischen Luft, beobachten die Natur in ihrer Vielfältigkeit und besuchen die Spielplätze in der Umgebung. Bewegung wird bei uns "groß" geschrieben. Wir singen viel und machen erste, frühe Erfahrungen mit Musik- und Klanginstrumenten. Kinderbücher, Fingerspiele und Verse spielen für die Förderung der Sprache eine große Rolle.</p>
               </TextWithImageContainer>
             </SectionContainer>
           </BackgroundContentContainer>
