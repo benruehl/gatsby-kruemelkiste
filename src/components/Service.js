@@ -117,7 +117,7 @@ class Service extends React.Component {
 
             <SectionContainer>
               <TextWithImageContainer image={indoorImg} imagePosition='left'>
-                <h2>Ein Umfangreicher Spieleschatz</h2>
+                <h2>Ein umfangreicher Spieleschatz</h2>
                 <p>Wir haben ein kindgerechtes, farbenfrohes Spielzimmer mit einem Kletterhäuschen, Tobe- und Kuschelmatratze und vielen Bewegungselementen. Spannende Spielelemente, wie die große Holzeisenbahn, die Murmelbahn, jede Menge Bausteine, Autos, Bücher, Spiele, Handpuppen, einfache Musikinstrumente u.s.w. wecken die kreative Neugier der Kinder.</p>
               </TextWithImageContainer>
             </SectionContainer>
