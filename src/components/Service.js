@@ -12,6 +12,8 @@ import cartImg from '../img/in-cart.jpg'
 import cartBlurImg from '../img/in-cart-blur.jpg'
 import indoorImg from '../img/indoor.jpg'
 import indoorBlurImg from '../img/indoor-blur.jpg'
+import cherryflowerImg from '../img/cherryflower.jpg'
+import cloudsImg from '../img/clouds.jpg'
 import babyIcon from '../img/icon-baby.svg'
 import timeIcon from '../img/icon-time.svg'
 import noSmokingIcon from '../img/icon-no-smoking.svg'
@@ -40,7 +42,7 @@ const IconContainer = styled.div`
 `
 
 const LargeSectionContainer = styled(SectionContainer)`
-  min-height: 60vh;
+  min-height: 50vh;
 `
 
 class Service extends React.Component {
@@ -127,17 +129,28 @@ class Service extends React.Component {
             </LargeSectionContainer>
           </BackgroundContentContainer>
 
-          <LargeSectionContainer>
+          <BackgroundContentContainer background='#ffffff'>
             <div
               css={{
-                textAlign: 'center',
-                marginBottom: '1.5em',
-              }}>
+                width: '100%',
+                height: '100%',
+                background: 'url(' + cherryflowerImg + ') center center no-repeat',
+                backgroundSize: 'cover',
+                opacity: 0.5
+              }}/>
 
-              <h2>Betreuung je nach individueller Situation</h2>
-              <p>Grundlage für meine Arbeit ist die situationsbezogene Pädagogik, d.h. ich greife Themen, Ideen und Anregungen auf, die die Kinder in die Tagespflege mitbringen, und entwickle sie gemeinsam mit den Kindern weiter. Ergänzend biete ich den Kindern kleine Projekte an. Es wird gemalt, geknetet, gebastelt – häufig in Bezug auf die Jahreszeiten und deren typische Besonderheiten. Jedes Kind wird entsprechend seines Alters und seines Entwicklungsstandes individuell gefördert.</p>
-            </div>
-          </LargeSectionContainer>
+            <LargeSectionContainer>
+              <div
+                css={{
+                  textAlign: 'center',
+                  marginBottom: '1.5em',
+                }}>
+
+                <h2>Betreuung je nach individueller Situation</h2>
+                <p>Grundlage für meine Arbeit ist die situationsbezogene Pädagogik, d.h. ich greife Themen, Ideen und Anregungen auf, die die Kinder in die Tagespflege mitbringen, und entwickle sie gemeinsam mit den Kindern weiter. Ergänzend biete ich den Kindern kleine Projekte an. Es wird gemalt, geknetet, gebastelt – häufig in Bezug auf die Jahreszeiten und deren typische Besonderheiten. Jedes Kind wird entsprechend seines Alters und seines Entwicklungsstandes individuell gefördert.</p>
+              </div>
+            </LargeSectionContainer>
+          </BackgroundContentContainer>
 
           <BackgroundContentContainer background='#d0ef98'>
             <div
@@ -156,17 +169,28 @@ class Service extends React.Component {
             </LargeSectionContainer>
           </BackgroundContentContainer>
 
-          <LargeSectionContainer>
+          <BackgroundContentContainer background='#ffffff'>
             <div
               css={{
-                textAlign: 'center',
-                marginBottom: '1.5em',
-              }}>
+                width: '100%',
+                height: '100%',
+                background: 'url(' + cloudsImg + ') center center no-repeat',
+                backgroundSize: 'cover',
+                opacity: 0.35,
+              }}/>
 
-              <h2>Soziale Werte werden vermittelt</h2>
-              <p>Die  Kinder erlernen die tägliche Hygiene, wie das Händewaschen, Töpfchen- oder Toilettengang und das Zähneputzen. Die Selbständigkeit wird dabei altersgerecht gefördert, genauso wie ein faires und freundliches Miteinander in der Gruppe.</p>
-            </div>
-          </LargeSectionContainer>
+            <LargeSectionContainer>
+              <div
+                css={{
+                  textAlign: 'center',
+                  marginBottom: '1.5em',
+                }}>
+
+                <h2>Soziale Werte werden vermittelt</h2>
+                <p>Die  Kinder erlernen die tägliche Hygiene, wie das Händewaschen, Töpfchen- oder Toilettengang und das Zähneputzen. Die Selbständigkeit wird dabei altersgerecht gefördert, genauso wie ein faires und freundliches Miteinander in der Gruppe.</p>
+              </div>
+            </LargeSectionContainer>
+          </BackgroundContentContainer>
         </div>
       </BackgroundContentContainer>
     )
