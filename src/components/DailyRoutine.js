@@ -11,11 +11,11 @@ import strings from '../../data/strings'
 const DailyItem = styled.div`
   display: flex;
   flex-direction: row;
-  background: #f0f0f0;
+  background: #f7f5f2;
   
 
   &:nth-child(even) {
-    background: #f8f8f8;
+    background: #fffcf9;
   }
 
   @media (max-width: 640px) {

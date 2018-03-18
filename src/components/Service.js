@@ -111,7 +111,7 @@ class Service extends React.Component {
             </SectionContainer>
           </BackgroundContentContainer>
 
-          <BackgroundContentContainer background='#ffd3e5'>
+          <BackgroundContentContainer background='#ffe8f1'>
             <div
               css={{
                 width: '100%',
@@ -152,14 +152,14 @@ class Service extends React.Component {
             </LargeSectionContainer>
           </BackgroundContentContainer>
 
-          <BackgroundContentContainer background='#d0ef98'>
+          <BackgroundContentContainer background='#f0ffd8'>
             <div
               css={{
                 width: '100%',
                 height: '100%',
                 background: 'url(' + cartBlurImg + ') center center no-repeat',
                 backgroundSize: 'cover',
-                opacity: 0.25,
+                opacity: 0.2,
               }}/>
             <LargeSectionContainer>
               <TextWithImageContainer image={cartImg} imagePosition='right'>
