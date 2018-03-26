@@ -18,8 +18,9 @@ const Group = styled.div`
 		flex: 1 1 auto;
 	}
 
-	@media (max-width: 680px) {
+	@media (max-width: 640px) {
 		margin: 2em 0;
+		align-items: center;
 	}
 `
 

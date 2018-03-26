@@ -45,6 +45,15 @@ const LargeSectionContainer = styled(SectionContainer)`
   min-height: 50vh;
 `
 
+const CenterTextContainer = styled.div`
+  text-align: center;
+  margin-bottom: 1.5em;
+
+  @media (max-width: 640px) {
+    text-align: left;
+  }
+`
+
 class Service extends React.Component {
   render() {
     return (
@@ -140,15 +149,10 @@ class Service extends React.Component {
               }}/>
 
             <LargeSectionContainer>
-              <div
-                css={{
-                  textAlign: 'center',
-                  marginBottom: '1.5em',
-                }}>
-
+              <CenterTextContainer>
                 <h2>Betreuung je nach individueller Situation</h2>
                 <p>Grundlage für meine Arbeit ist die situationsbezogene Pädagogik, d.h. ich greife Themen, Ideen und Anregungen auf, die die Kinder in die Tagespflege mitbringen, und entwickle sie gemeinsam mit den Kindern weiter. Ergänzend biete ich den Kindern kleine Projekte an. Es wird gemalt, geknetet, gebastelt – häufig in Bezug auf die Jahreszeiten und deren typische Besonderheiten. Jedes Kind wird entsprechend seines Alters und seines Entwicklungsstandes individuell gefördert.</p>
-              </div>
+              </CenterTextContainer>
             </LargeSectionContainer>
           </BackgroundContentContainer>
 
@@ -180,15 +184,10 @@ class Service extends React.Component {
               }}/>
 
             <LargeSectionContainer>
-              <div
-                css={{
-                  textAlign: 'center',
-                  marginBottom: '1.5em',
-                }}>
-
+              <CenterTextContainer>
                 <h2>Soziale Werte werden vermittelt</h2>
                 <p>Die  Kinder erlernen die tägliche Hygiene, wie das Händewaschen, Töpfchen- oder Toilettengang und das Zähneputzen. Die Selbständigkeit wird dabei altersgerecht gefördert, genauso wie ein faires und freundliches Miteinander in der Gruppe.</p>
-              </div>
+              </CenterTextContainer>
             </LargeSectionContainer>
           </BackgroundContentContainer>
         </div>
