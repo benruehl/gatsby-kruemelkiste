@@ -37,7 +37,7 @@ const IconContainer = styled.div`
   min-height: 7.5em;
   width: 10vw;
   height: 10vw;
-  background-size: contain;
+  background-size: contain !important;
   margin-bottom: 2em;
 `
 
