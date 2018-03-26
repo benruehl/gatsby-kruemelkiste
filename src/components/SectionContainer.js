@@ -14,8 +14,8 @@ class SectionContainer extends React.Component {
           justifyContent: 'center',
           textAlign: 'center',
           background: this.props.background,
-          paddingLeft: '2vw',
-          paddingRight: '2vw',
+          paddingLeft: '5vw',
+          paddingRight: '5vw',
         }}>
 
         <div

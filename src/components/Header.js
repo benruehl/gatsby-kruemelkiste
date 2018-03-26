@@ -96,7 +96,7 @@ class Header extends React.Component {
               textAlign: 'left',
 
               '@media (max-width: 1400px)': {
-                marginLeft: '2vw',
+                marginLeft: '5vw',
               }
             }}>
 
