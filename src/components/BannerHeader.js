@@ -17,13 +17,13 @@ class BannerHeader extends React.Component {
         <div
           css={{
             position: 'relative',
-            minHeight: 0,
             width: '100%',
+            height: '65vh',
+            minHeight: '15rem',
+            paddingTop: '34%',
             overflow: 'hidden',
             background: 'url(' + this.props.backgroundImage + ') center center no-repeat',
             backgroundSize: 'cover',
-            paddingTop: '34%',
-            minHeight: '15rem',
           }}>
 
           <div 

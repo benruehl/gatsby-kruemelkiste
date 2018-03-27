@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import titleImg from '../img/kid-soap-bubbles.jpg'
-import titleImgAlt from '../img/kid-soap-bubbles-alt.jpg'
 import strings from '../../data/strings'
 import {contentWidth} from '../styles/dimens'
 import {primaryColor} from '../styles/colors'
@@ -61,10 +60,10 @@ class Header extends React.Component {
         css={{
           width: '100%',
           height: '50vw',
-          minHeight: '60vh',
+          minHeight: '80vh',
           maxHeight: '100vh',
           overflow: 'hidden',
-          background: 'transparent',backgroundSize: 'cover',
+          background: 'transparent',
           backgroundSize: 'cover',
 
           '@media (min-width: 801px) and (min-aspect-ratio: 4/3)': {
@@ -73,8 +72,7 @@ class Header extends React.Component {
           },
 
           '@media (max-width: 800px), (max-aspect-ratio: 4/3)': {
-            background: 'url(' + titleImgAlt + ') center center no-repeat fixed',
-            backgroundSize: 'cover',
+            background: 'transparent',
           },
         }}>
 
