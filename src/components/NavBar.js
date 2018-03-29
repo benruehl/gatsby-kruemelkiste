@@ -14,7 +14,10 @@ const NavBarItem = styled.h4`
   color: #404040;
 
   @media (max-width: 800px) {
-    margin: .75em 0;
+    margin: 0;
+    padding: .75em 0;
+    align-self: stretch;
+    text-align: center;
   }
 `
 
@@ -159,8 +162,8 @@ class NavBar extends React.Component {
                 left: 0,
                 width: '100%',
                 background: 'white',
-                padding: '5vh',
-                paddingTop: '4.5em',
+                padding: '1rem',
+                paddingTop: '3.5em',
                 WebkitBoxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
                 MozBoxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
                 boxShadow: '0px 3px 5px 0px rgba(0,0,0,0.15)',
