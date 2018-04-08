@@ -59,9 +59,9 @@ class Header extends React.Component {
       <div
         css={{
           width: '100%',
-          height: '50vw',
+          height: 'calc(50vw + (1em + 2vw))', // second part compensates section seperator size on bottom
           minHeight: '80vh',
-          maxHeight: '100vh',
+          maxHeight: 'calc(100vh + (1em + 2vw))', // second part compensates section seperator size on bottom
           overflow: 'hidden',
           background: 'transparent',
           backgroundSize: 'cover',
@@ -90,7 +90,7 @@ class Header extends React.Component {
             css={{
               margin: '4rem 0',
               marginLeft: '6vw',
-              marginBottom: '3vw',
+              marginBottom: 'calc(3vw + (1em + 2vw))',
               textAlign: 'left',
 
               '@media (max-width: 1400px)': {
@@ -125,6 +125,7 @@ class Header extends React.Component {
           </div>
         </div>
 
+        {/* static navbar */}
         <div
           css={{
             position: 'absolute',
@@ -174,6 +175,36 @@ class Header extends React.Component {
 
           </div>
         </div>
+
+        {/* section separator */}
+        <div
+          css={{
+            position: 'relative',
+            width: '100%',
+            paddingBottom: 'calc(1em + 2vw)',
+            backgroundColor: 'white',
+            
+            ':before, &:after': {
+              content: ' ',
+              position: 'absolute',
+              bottom: '100%',
+              width: '50%',
+              paddingBottom: 'inherit',
+              backgroundColor: 'inherit',
+            },
+            ':before': {
+              right: '50%',
+              transformOrigin: '100% 100%',
+              transform: 'skewX(45deg)',
+            },
+            ':after': {
+              left: '50%',
+              transformOrigin: '0 100%',
+              transform: 'skewX(-45deg)',
+            },
+          }}>
+        </div>
+
       </div>
     )
   }
