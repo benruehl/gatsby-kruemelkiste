@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import SectionContainer from '../components/SectionContainer'
 import BackgroundContentContainer from '../components/BackgroundContentContainer'
 
-import kidBallPitImg from '../img/kid-ball-pit.jpg'
+import kidPondImg from '../img/kid-pond.jpg'
 import kidPaintingImg from '../img/kid-painting.jpg'
 import kidCarsImg from '../img/kid-cars.jpg'
 
@@ -54,15 +54,15 @@ class ImageBar extends React.Component {
             }}>
 
             <ImageWrapper className='materialCard1'>
-              <img src={kidBallPitImg} alt="child in ball pit"/>
+              <img src={kidCarsImg} alt="Kind spielt mit Spielzeugautos auf dem Wohnzimmertisch"/>
             </ImageWrapper>
 
             <ImageWrapper className='materialCard1'>
-              <img src={kidPaintingImg} alt="child painting"/>
+              <img src={kidPaintingImg} alt="Kind malt mit Wachsmalstiften"/>
             </ImageWrapper>
 
             <ImageWrapper className='materialCard1'>
-              <img src={kidCarsImg} alt="child playing with cars"/>
+              <img src={kidPondImg} alt="Kinder greifen nach Wasser am Brunnen"/>
             </ImageWrapper>
 
           </div>
