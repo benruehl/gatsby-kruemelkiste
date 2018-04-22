@@ -1,0 +1,10 @@
+{
+    "name": "Steffis Krümelkiste",
+    "short_name": "Steffis Krümelkiste",
+    "start_url": ".",
+    "display": "browser",
+    "lang": "de-DE",
+    "description": "Liebevolle Kindertagespflege in Weißensee",
+    "background_color": "#eb584f",
+    "theme_color": "#eb584f"
+}
