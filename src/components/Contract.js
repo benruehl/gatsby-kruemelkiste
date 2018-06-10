@@ -73,12 +73,8 @@ class Contract extends React.Component {
                 <ColumnHeader>Ihr benötigt:</ColumnHeader>
 
                 <ColumnBody>
-                  <ol>
-                    <li>Antragsformular (<a href='http://www.berlin.de/jugendamt-pankow/dienste-und-leistungen/kindertagesbetreuung/kita/'>Link</a>)</li>
-                    <li>Unterschrift beider Sorgeberechtigter</li>
-                    <li>Einkommensnachweis</li>
-                    <li>Bescheinigung des Arbeitgebers</li>
-                  </ol>
+                  Antragsformular (<a href='http://www.berlin.de/jugendamt-pankow/dienste-und-leistungen/kindertagesbetreuung/kita/' style={{display: 'contents'}}>Link</a>) 
+                  <br/> und vom Jugendamt geforderte Nachweise
                 </ColumnBody>
               </TableColumn>
 
@@ -101,7 +97,7 @@ class Contract extends React.Component {
                 <ColumnBody>
                   <div css={{ display: 'flex' }}>
                     <div>Montag:</div>
-                    <div style={{ flex: '1 1 auto', marginLeft: '1rem', textAlign: 'right', }}>9 – 12 Uhr</div>
+                    <div style={{ flex: '1 1 auto', marginLeft: '1rem', textAlign: 'right', }}>9 – 12 u. 13 – 14.30 Uhr</div>
                   </div>
                   <div css={{ display: 'flex' }}>
                     <div>Dienstag:</div>
