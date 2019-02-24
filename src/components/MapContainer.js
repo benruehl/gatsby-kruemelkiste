@@ -20,7 +20,7 @@ class MapContainer extends React.Component {
     window.initMap = this.initMap;
 
     // Asynchronously load the Google Maps script, passing in the callback reference
-    this.loadJS('https://maps.googleapis.com/maps/api/js?key=AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo&callback=initMap')
+    this.loadJS('https://maps.googleapis.com/maps/api/js?key=AIzaSyCwRVzrL4nSTZ0xkgLgkZgi7Q1TLOUoEao&callback=initMap')
   }
 
   loadJS(src) {
