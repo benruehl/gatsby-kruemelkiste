@@ -9,7 +9,7 @@ class MapContainer extends React.Component {
         display: 'flex',
         minHeight: '30em',
       }}>
-        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=13.462725877761843%2C52.54733633046878%2C13.467746973037722%2C52.54960019277862&amp;layer=hot&amp;marker=52.548471504454746%2C13.46523642539978"
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=13.451471328735353%2C52.5439337932714%2C13.479065895080568%2C52.55298924386305&amp;layer=hot&amp;marker=52.548461752121476%2C13.465268611907959"
           css={{
             flex: 1,
             margin: 0,
