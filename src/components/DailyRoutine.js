@@ -155,7 +155,7 @@ class DailyRoutine extends React.Component {
                   <ItemActivity>Kleine Beschäftigungen am Tisch oder freies Spiel</ItemActivity>
                 </DailyItem>
                 <DailyItem>
-                  <ItemTime>15.45 - 16.30	Uhr</ItemTime>
+                  <ItemTime>15.45 - 16.00	Uhr</ItemTime>
                   <ItemActivity>
                     Wir sind auf dem Spielplatz im Hof
                     <ActivityDescription>

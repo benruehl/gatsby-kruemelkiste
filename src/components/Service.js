@@ -109,7 +109,7 @@ class Service extends React.Component {
 
                 <FeatureContainer className='materialCard1'>
                   <IconContainer css={{ background: 'url(' + timeIcon + ')' }}/>
-                  <p>Betreuungszeiten von Montag bis Freitag von je 8 bis 16.30 Uhr</p>
+                  <p>Betreuungszeiten von Montag bis Freitag von je 8 bis 16 Uhr</p>
                 </FeatureContainer>
 
                 <FeatureContainer className='materialCard1'>
