@@ -116,7 +116,7 @@ class Contract extends React.Component {
             </div>
 
             <p>Vereinbart am besten einen Termin über <a href='https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=1&dienstleister=324903&anliegen%5B%5D=324873&herkunft=http%3A%2F%2Fservice.berlin.de%2Fdienstleistung%2F324873%2F'>die Website des Jugendamts Pankow</a> oder telefonisch unter 030 90295-0 während der Öffnungszeiten.</p>
-            <p>Die Kosten der Kinderbetreuung sind einkommensabhängig und bei Kita und Tagespflege gleich.</p>
+            <p>Die Betreuung ist für die Eltern kostenlos. Es wird nur ein Essenbeitrag in Höhe von 23 EUR monatlich erhoben.</p>
           
           </div>
         </SectionContainer>
