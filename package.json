@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Benjamin R",
   "dependencies": {
-    "gatsby": "^1.6.5",
+    "gatsby": "^5.3.3",
     "gatsby-link": "^1.6.5",
     "gatsby-plugin-glamor": "^1.6.4",
     "gatsby-plugin-react-helmet": "^1.0.2",
